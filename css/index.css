@@ -75,6 +75,17 @@ span.span_o {
 div.pie_pagina_index{
     border: 1px solid #000000;
 }
+/*Links de pie de pagina*/
+a.pie_pagina_links {
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+}
+/*Links de pie de pagina*/
+a.tad {
+    color: #EBCA9A!important;
+    font-family: 'Open Sans', sans-serif;
+}
 
 /*X-Small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
@@ -121,6 +132,10 @@ div.pie_pagina_index{
     /*pie_pagina_index*/
     div.pie_pagina_index{
         padding: 10px;
+    }
+    /*Links de pie de pagina*/
+    a.pie_pagina_links {
+        font-size: .9rem;
     }
 }
 
