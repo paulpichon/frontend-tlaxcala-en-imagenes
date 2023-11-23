@@ -87,8 +87,92 @@ a.tad {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* XX-Large devices (larger desktops)
+No media query since the xxl breakpoint has no upper bound on its width*/
+
+/* X-Large devices (large desktops, less than 1400px)*/
+@media (max-width: 1399.98px) {  }
+
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {  }
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+    div.contenedor_principal {
+        height: 100vh;
+    }
+}
+
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { 
+    /*contenedor principal*/
+    div.contenedor_principal {
+        height: 0vh;
+    }
+    /*contenedor contenedor_tei_index*/
+    div.contenedor_tei_index{
+        padding: 20px;
+        text-align: center;
+    }
+    /*Titulo Tlaxcala En Imágenes*/
+    h1.titulo_principal_h1{
+        font-size: 4rem;
+    }
+    /*subtitulo_h6 POR*/
+    h6.subtitulo_h6 {
+        font-size: 1.1rem;
+    }
+    /*span_tad TAD*/
+    span.span_tad {
+        font-size: 1.3rem;
+        margin-left: 80px;
+        margin-top: 10px;
+    }
+    /*contenedor_enlaces_index*/
+    div.contenedor_enlaces_index{
+        padding: 10px;
+        margin-top: 10%;
+    }
+    /*h3 Una imagen vale más que mil palabras*/
+    h3.subtitulo_h3 {
+        font-size: 1.4rem;
+        padding: 20px 0;
+    }
+    /*subtitulo_h4 Únete Hoy*/
+    h4.subtitulo_h4 {
+        font-size: 2rem;
+        font-weight: 300;
+        padding: 10px 0;
+    }
+    /*contenedor_enlaces botones*/
+    div.contenedor_enlaces{
+        margin-top: 35px;
+        padding: 10px;
+    }
+    /*a_links botones links*/
+    a.a_links {
+        font-size: 1.2rem;
+    }
+    /*span_o*/
+    span.span_o {
+        font-size: 1.3rem;
+    }
+    /*pie_pagina_index*/
+    div.pie_pagina_index{
+        padding: 10px;
+    }
+    /*Links de pie de pagina*/
+    a.pie_pagina_links {
+        font-size: 1rem;
+    }
+}
+
 /*X-Small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
+    /*contenedor principal*/
+    div.contenedor_principal {
+        height: 0vh;
+    }
     /*contenedor contenedor_tei_index*/
     div.contenedor_tei_index{
         padding: 10px;
@@ -107,7 +191,8 @@ a.tad {
     /*contenedor_enlaces_index*/
     div.contenedor_enlaces_index{
         padding: 10px;
-        margin-top: 50px;
+        /*margin-top: 50px;*/
+        margin-top: 10%;
     }
     /*h3*/
     h3.subtitulo_h3 {
@@ -125,6 +210,10 @@ a.tad {
         margin: 20px 0;
         padding: 10px;
     }
+    /*a_links botones links*/
+    a.a_links {
+        font-size: 1rem;
+    }
     /*span_o*/
     span.span_o {
         font-size: 1.2rem;
@@ -138,23 +227,6 @@ a.tad {
         font-size: .9rem;
     }
 }
-
-/*Small devices (landscape phones, less than 768px)*/
-@media (max-width: 767.98px) { 
-    
- }
-
-/* Medium devices (tablets, less than 992px)*/
-@media (max-width: 991.98px) {  }
-
-/*Large devices (desktops, less than 1200px)*/
-@media (max-width: 1199.98px) {  }
-
-/* X-Large devices (large desktops, less than 1400px)*/
-@media (max-width: 1399.98px) {  }
-
-/* XX-Large devices (larger desktops)
-No media query since the xxl breakpoint has no upper bound on its width*/
 
 
 
