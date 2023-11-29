@@ -231,12 +231,66 @@ a.tad {
     a.pie_pagina_links {
         font-size: 1.2rem;
     }
-
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-
+    /*contenedor contenedor_tei_index*/
+    div.contenedor_tei_index{
+        padding: 0;
+    }
+    /*Titulo Tlaxcala En Imágenes*/
+    h1.titulo_principal_h1{
+        font-size: 6rem;
+    }
+    /*subtitulo_h6 POR*/
+    h6.subtitulo_h6 {
+        font-size: 1.3rem;
+    }
+    /*span_tad TAD*/
+    span.span_tad {
+        font-size: 1.4rem;
+        margin-left: 100px;
+    }
+    /*contenedor_enlaces_index*/
+    div.contenedor_enlaces_index{
+        margin-top: 0;
+    }
+    /*h3 Una imagen vale más que mil palabras*/
+    h3.subtitulo_h3 {
+        font-size: 1.6rem;
+    }
+    /*subtitulo_h4 Únete Hoy*/
+    h4.subtitulo_h4 {
+        font-size: 2.5rem;
+        padding: 0;
+    }
+    /*contenedor_enlaces botones*/
+    div.contenedor_enlaces{
+        margin-top: 40px;
+        padding: 15px;
+    }
+    /*a_links botones links*/
+    a.a_links {
+        font-size: 1.4rem;
+    }
+    /*Icono Google*/
+    img.google_icon {
+        width: 2.2rem;
+        margin-bottom: 3px;
+    }
+    /*span_o*/
+    span.span_o {
+        font-size: 1.4rem;
+    }
+    /*pie_pagina_index*/
+    div.pie_pagina_index{
+        padding: 10px;
+    }
+    /*Links de pie de pagina*/
+    a.pie_pagina_links {
+        font-size: 1.2rem;
+    }
 }
 
 /*X-Large devices (large desktops, 1200px and up)*/
