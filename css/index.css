@@ -61,24 +61,35 @@ div.contenedor_enlaces{
     margin: 20px 0;
     padding: 10px;
 }
-/*Estilos div botones enlaces */
-div.boton {
+
+/*a_links botones links*/
+a.a_links {
+    /*estilos del boton*/
+    display: block;
     border: 2px solid #000000;
     margin: 15px 0;  
     border-radius: 20px; 
     padding: 8px 0; 
-}
-/*Icono Google*/
-img.google_icon {
-    width: 25px;
-}
-/*a_links botones links*/
-a.a_links {
+    /*estilos de texto del boton*/
     color: #000000;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     font-size: 1rem;
+
+    transition: all 0.3s ease 0s;
+
 }
+/*HOVER A_LINKS*/
+a.a_links:hover {
+    transform: translateY(-4px);
+}
+/*FIN HOVER A_LINKS*/
+
+/*Icono Google*/
+img.google_icon {
+    width: 25px;
+}
+
 /*span_o*/
 span.span_o {
     font-family: 'Open Sans', sans-serif;
@@ -294,19 +305,22 @@ a.tad {
 
 /*X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
+    /*Titulo Tlaxcala En Imágenes*/
+    h1.titulo_principal_h1{
+        font-size: 7rem;
+    }
     /*contenedor_enlaces botones*/
     div.contenedor_enlaces{
-        
         max-width: 600px;
         margin: 0 auto;
     }
     /*Estilos div botones enlaces */
-    div.boton {
+    /*div.boton {
         border: 2px solid #000000;
         margin: 15px 0;  
         border-radius: 20px; 
         padding: 8px 0; 
-    }
+    }*/
     /*Icono Google*/
     img.google_icon {
         width: 25px;
@@ -318,7 +332,16 @@ a.tad {
         text-decoration: none;
         font-size: 1rem;
     }    
+    /*Links de pie de pagina*/
+    a.pie_pagina_links {
+        font-size: 1.5rem;
+    }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) {  }
+@media (min-width: 1400px) { 
+    /*Titulo Tlaxcala En Imágenes*/
+    h1.titulo_principal_h1{
+        font-size: 8.5rem;
+    }
+ }
