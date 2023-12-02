@@ -75,7 +75,7 @@ a.a_links {
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     font-size: 1rem;
-
+    /*EFECTOS*/
     transition: all 0.3s ease 0s;
 
 }
@@ -105,11 +105,25 @@ a.pie_pagina_links {
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
     font-size: .9rem;
+    /*EFECTOS*/
+    transition: all 0.3s ease 0s;
 }
+/*HOVER A_LINKS*/
+a.pie_pagina_links:hover {
+    color:  #EBCA9A;
+}
+/*FIN HOVER A_LINKS*/
+
 /*Links de pie de pagina*/
 a.tad {
     color: #EBCA9A!important;
     font-family: 'Open Sans', sans-serif;
+    /*EFECTOS*/
+    transition: all 0.3s ease 0s;
+}
+/*HOVER*/
+a.tad:hover {
+    color: #000000!important;
 }
 
 /*X-Small devices (portrait phones, less than 576px)*/
