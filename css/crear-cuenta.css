@@ -57,8 +57,74 @@ input.inputs_crear_cuenta{
     border-radius: 20px;
     border: 2px solid #000000;
 }
+input.inputs_crear_cuenta:focus{
+    border: 2px solid #000000;
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+}
+/*Boton registrarse*/
+button.boton_registrarse {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 3px 25px;
+    border: 2px solid #EBCA9A;
+    color: #EBCA9A;
+    /*EFECTOS*/
+    transition: all 0.3s ease 0s;
+}
+/*Hover boton*/
+button.boton_registrarse:hover {
+    background-color: #EBCA9A;
+    color: #FFFFFF;
+}
+/*Parrafo Link iniciar sesion*/
+p.pregunta {
+    font-family: 'Open Sans', sans-serif;
+}
+/*Link iniciar sesion*/
+a.enlace_iniciar_sesion {
+    text-decoration: none;
+    color: #EBCA9A;
+    /*EFECTOS*/
+    transition: all 0.3s ease;
+}
+a.enlace_iniciar_sesion:hover {
+    font-weight: bold;
+}
+/*PIE DE PAGINA*/
+/*pie_pagina_index*/
+div.pie_pagina_index{
+    padding: 10px;
+}
+/*Links de pie de pagina*/
+a.pie_pagina_links {
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: .9rem;
+    /*EFECTOS*/
+    transition: all 0.3s ease 0s;
+}
+/*HOVER A_LINKS*/
+a.pie_pagina_links:hover {
+    color:  #EBCA9A;
+}
+/*FIN HOVER A_LINKS*/
 
-
+/*Links de pie de pagina*/
+a.tad {
+    color: #EBCA9A!important;
+    font-family: 'Open Sans', sans-serif;
+    /*EFECTOS*/
+    transition: all 0.3s ease 0s;
+}
+/*HOVER*/
+a.tad:hover {
+    color: #000000!important;
+}
 
 /*X-Small devices (portrait phones, less than 576px)*/
 /* No media query for `xs` since this is the default in Bootstrap*/
