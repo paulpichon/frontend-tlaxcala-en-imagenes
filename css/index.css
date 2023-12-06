@@ -243,10 +243,6 @@ a.tad:hover {
     span.span_o {
         font-size: 1.4rem;
     }
-    /*pie_pagina_index*/
-    div.pie_pagina_index{
-        padding: 10px;
-    }
     /*Links de pie de pagina*/
     a.pie_pagina_links {
         font-size: 1.2rem;
