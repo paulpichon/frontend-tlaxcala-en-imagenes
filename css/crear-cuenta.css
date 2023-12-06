@@ -131,7 +131,36 @@ a.tad:hover {
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { 
-
+    /*Titulo Tlaxcala En Imágenes*/
+    h1.titulo_principal_h1{
+        font-size: 4rem;
+    }
+    /*subtitulo_h6 POR*/
+    h6.subtitulo_h6 {
+        font-size: 1.1rem;
+    }
+    /*span_tad TAD*/
+    span.span_tad {
+        font-size: 1.1rem;
+        margin-left: 80px;
+        margin-top: 10px;
+    }
+    /*Parrafo Link iniciar sesion*/
+    p.pregunta {
+        font-size: 1.1rem;
+    }
+    /*Link iniciar sesion*/
+    a.enlace_iniciar_sesion {
+        margin-left: 5px;
+    }
+    /*pie_pagina_index*/
+    div.pie_pagina_index{
+        padding: 10px;
+    }
+    /*Links de pie de pagina*/
+    a.pie_pagina_links {
+        font-size: 1rem;
+    }
 }
 
 /*Medium devices (tablets, 768px and up)*/
