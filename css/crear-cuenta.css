@@ -36,7 +36,7 @@ span.span_tad {
 div.contenedor_formulario{
     margin-top: 10%;
 }
-/*contenedor_titulos unete hoy*/
+/*contenedor*/
 div.contenedor_titulos {
     text-align: center;
 }
@@ -47,7 +47,7 @@ h3.subtitulo_h3 {
     font-size: 1.2rem;
     padding: 10px 0;
 }
-/*contenedor_enlaces botones*/
+/*contenedor_formulario*/
 div.contenedor_formulario{
     text-align: center;
     margin: 20px 0;
@@ -165,7 +165,39 @@ a.tad:hover {
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
-
+    /*Titulo Tlaxcala En Imágenes*/
+    h1.titulo_principal_h1{
+        font-size: 6rem;
+    }
+    /*subtitulo_h6 POR*/
+    h6.subtitulo_h6 {
+        font-size: 1.2rem;
+    }
+    /*span_tad TAD*/
+    span.span_tad {
+        font-size: 1.3rem;
+    }
+    /*Crear cuenta*/
+    h3.subtitulo_h3 {
+        font-size: 1.4rem;
+    }
+    /*Inputs*/
+    input.inputs_crear_cuenta {
+        font-size: 1.1rem;
+    }
+    /*Boton registrarse*/
+    button.boton_registrarse {
+        font-size: 1.3rem;
+        padding: 4px 30px;
+    }
+    /*Parrafo Link iniciar sesion*/
+    p.pregunta {
+        font-size: 1.2rem;
+    }
+    /*Links de pie de pagina*/
+    a.pie_pagina_links {
+        font-size: 1.2rem;
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
