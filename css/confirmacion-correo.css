@@ -82,10 +82,12 @@ button.boton_registrarse:hover {
     color: #FFFFFF;
 }
 /*Parrafo introducir codigo*/
-p.texto {
+a.texto {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.9rem;
     margin: 10px 0;
+    text-decoration: none;
+    color: #000000;
 }
 
 /*X-Small devices (portrait phones, less than 576px)*/
@@ -108,7 +110,7 @@ p.texto {
         margin-top: 10px;
     }
     /*Parrafo introducir codigo*/
-    p.texto {
+    a.texto {
         font-size: 1rem;
     }
 }
@@ -161,7 +163,7 @@ p.texto {
         padding: 4px 30px;
     }
     /*Parrafo introducir codigo*/
-    p.texto {
+    a.texto {
         font-size: 1.1rem;
     }
 }
