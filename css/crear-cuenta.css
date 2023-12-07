@@ -162,7 +162,6 @@ a.tad:hover {
         font-size: 1rem;
     }
 }
-
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
     /*Titulo Tlaxcala En Imágenes*/
@@ -199,16 +198,53 @@ a.tad:hover {
         font-size: 1.2rem;
     }
 }
-
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-
+    /*Titulo Tlaxcala En Imágenes*/
+    h1.titulo_principal_h1{
+        font-size: 7rem;
+    }
+    /*Crear cuenta*/
+    h3.subtitulo_h3 {
+        font-size: 1.5rem;
+    }
+    /*Inputs*/
+    input.inputs_crear_cuenta {
+        font-size: 1.2rem;
+    }
+    /*Boton registrarse*/
+    button.boton_registrarse {
+        font-size: 1.3rem;
+        padding: 4px 30px;
+    }
+    /*Parrafo Link iniciar sesion*/
+    p.pregunta {
+        font-size: 1.2rem;
+    }
+    /*pie_pagina_index*/
+    div.pie_pagina_index{
+        padding: 10px;
+    }
+    /*Links de pie de pagina*/
+    a.pie_pagina_links {
+        font-size: 1.2rem;
+    }
+    /*Contenedor de pie de pagina index*/
+    div.pie_pagina_index {
+        margin: 50px 0;
+    }
 }
-
 /*X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
+    /*Parrafo Link iniciar sesion*/
+    p.pregunta {
+        margin-top: 40px;
+    }
 }
-
 /* XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) { 
+    /*Boton registrarse*/
+    button.boton_registrarse {
+        margin-top: 30px;
+    }
  }
