@@ -39,7 +39,7 @@
 								<div class="mb-4">
 								  <input type="text" class="form-control inputs_crear_cuenta" id="codigo_verificacion" aria-describedby="Codigo verificacion" placeholder="Código de verificación">
 								</div>
-								<a href="#" class="texto d-block" data-bs-toggle="modal" data-bs-target="#exampleModal">¿No recibiste el correo electrónico?</a>
+								<a href="#" class="texto d-block" data-bs-toggle="modal" data-bs-target="#reenviarCorreo">¿No recibiste el correo electrónico?</a>
 								
 								<button type="submit" class="boton_registrarse">Verificar</button>
 							  </form>
@@ -54,23 +54,20 @@
 
 
 		<!-- Modal reenvio de correo-->
-		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal fade" id="reenviarCorreo" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ReenviarCorreoElectronico" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content">
-				<div class="modal-header">
-				<h1 class="modal-title fs-5" id="exampleModalLabel">¿No recibiste el correo electrónico?</h1>
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				<div class="modal-content">
+					<div class="modal-header">
+					<h1 class="modal-title fs-5" id="exampleModalLabel">¿No recibiste el correo electrónico?</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<button id="reenviar_correo" class="boton_reenviar_correo">Reenviar correo electronico</button>
+					</div>
 				</div>
-				<div class="modal-body">
-				...
-				</div>
-				<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary">Save changes</button>
-				</div>
-			</div>
 			</div>
 		</div>
+		<!-- Fin modal reenvio de correo-->
 
 		<!--Bootstrap v5.3.2-->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

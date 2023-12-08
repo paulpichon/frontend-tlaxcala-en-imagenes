@@ -89,6 +89,11 @@ a.texto {
     text-decoration: none;
     color: #000000;
 }
+/*Modal estilos*/
+button.boton_reenviar_correo {
+    background-color: transparent;
+    border: none;
+}
 
 /*X-Small devices (portrait phones, less than 576px)*/
 /* No media query for `xs` since this is the default in Bootstrap*/
