@@ -1,0 +1,17 @@
+div.sugerencias {
+    display: none;
+}
+
+
+@media (min-width: 768px) { 
+    div.contenedor_menu {
+        position: sticky;
+        top: 0;
+    }
+    ul.lista{
+        flex-direction: column;
+    }
+    div.sugerencias {
+        display: block;
+    }
+}
