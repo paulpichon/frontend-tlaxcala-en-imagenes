@@ -1,17 +1,82 @@
+/*contenedor contenedor_tei_index*/
+div.contenedor_menu_superior{
+    text-align: center;
+    /*background: linear-gradient(70deg, white, white);*/
+    background-color: rgba(255,255,255,0.95);
+}
+/*Titulo Tlaxcala En Imágenes*/
+h1.titulo_principal_h1{
+    color: #EBCA9A;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 1.7rem;
+}
+/*subtitulo_h6 por tad*/
+h6.subtitulo_h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+}
+/*span_tad TAD*/
+span.span_tad {
+    color: #EBCA9A;
+    font-weight: bold;
+    margin-left: 70px;
+    font-size: 0.9rem;
+}
+/*Fin Titulo Tlaxcala En Imágenes*/
+
+
+
+
+/* Div publicidad/sugerencias */
 div.sugerencias {
     display: none;
 }
 
 
+
+/*X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    /*Titulo Tlaxcala En Imágenes*/
+    h1.titulo_principal_h1{
+        font-size: 2.4rem;
+    }
+    /*subtitulo_h6 por tad*/
+    h6.subtitulo_h6 {
+        font-size: 1.1rem;
+    }
+    /*span_tad TAD*/
+    span.span_tad {
+        font-size: 1.1rem;
+        margin-top: 7px;
+    }
+    /*Fin Titulo Tlaxcala En Imágenes*/
+}
+
+/*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
-    div.contenedor_menu {
+    /*Contenedor menu lateral-superior*/
+    div.contenedor_menu_lateral_inferior {
         position: sticky;
         top: 0;
     }
     ul.lista{
         flex-direction: column;
     }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    /* Div publicidad/sugerencias */
     div.sugerencias {
         display: block;
     }
-}
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {  }
