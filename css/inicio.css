@@ -1,3 +1,10 @@
+/*contenedores border*/
+div.contenedor_menu_lateral_inferior, div.contenedor_menu_superior, div.contenedor_contenido_principal, div.contenedor_sugerencias {
+    border: solid 1px black;
+}
+
+
+
 /*contenedor contenedor_tei_index*/
 div.contenedor_menu_superior{
     text-align: center;
@@ -69,14 +76,15 @@ No media query for `xs` since this is the default in Bootstrap*/
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
     /* Div publicidad/sugerencias */
     div.sugerencias {
         display: block;
     }
  }
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) {  }
