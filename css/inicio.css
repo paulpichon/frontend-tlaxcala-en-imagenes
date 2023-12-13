@@ -1,5 +1,5 @@
 /*contenedores border*/
-div.contenedor_menu_lateral_inferior, div.contenedor_menu_superior, div.contenedor_contenido_principal, div.contenedor_sugerencias {
+div.contenedor_menu_lateral_inferior, div.contenedor_menu_superior, div.contenedor_contenido_principal, div.contenedor_sugerencias, div.container-xxl {
     border: solid 1px black;
 }
 
