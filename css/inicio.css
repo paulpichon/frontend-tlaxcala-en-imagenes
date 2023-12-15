@@ -31,6 +31,16 @@ span.span_tad {
 }
 /*Fin Titulo Tlaxcala En Imágenes*/
 
+/*Menu inferior*/
+/*Los estilos de este menu funcionara hasta antes de llegar al breakpoint de los 768px*/
+/*Pasados los 768px se le dara otros estilos al mismo menu*/
+
+/*.contenedor_menu_lateral_inferior*/
+div.contenedor_menu_lateral_inferior {
+    background-color: rgba(255,255,255,0.95);
+}
+
+/*Fin Menu inferior*/
 
 
 
@@ -69,7 +79,7 @@ No media query for `xs` since this is the default in Bootstrap*/
         position: sticky;
         top: 0;
     }
-    ul.lista{
+    ul.menu_inferior_lateral{
         flex-direction: column;
     }
  }
