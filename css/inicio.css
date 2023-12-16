@@ -4,7 +4,6 @@ div.contenedor_menu_lateral_inferior, div.contenedor_menu_superior, div.contened
 }
 
 
-
 /*contenedor contenedor_tei_index*/
 div.contenedor_menu_superior{
     text-align: center;
@@ -38,6 +37,14 @@ span.span_tad {
 /*.contenedor_menu_lateral_inferior*/
 div.contenedor_menu_lateral_inferior {
     background-color: rgba(255,255,255,0.95);
+}
+/*Nombre de opciones*/
+/*span.nombre_opciones {
+    /*display: none;
+}*/
+/*Iconos*/
+img.imgSvg {
+    width: 20px;
 }
 
 /*Fin Menu inferior*/
