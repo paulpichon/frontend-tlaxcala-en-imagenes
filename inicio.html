@@ -25,32 +25,32 @@
 						<ul class="nav justify-content-center menu_inferior_lateral">
 							<li class="nav-item">
 								<a class="nav-link opciones_menu active" aria-current="page" href="#">
-									<img class="imgSvg" src="img/font-icons/home.svg" alt="">
-									<span class="nombre_opciones d-block">Home</span>
+									<img class="img_icono_menu" src="img/iconos-menu_principal/home.svg" alt="Icono Inicio" data-bs-toggle="tooltip" data-bs-placement="top" title="Inicio">
+									<span class="nombre_opciones_menu">Home</span>
 								</a>
 							</li>
 							<li class="nav-item">
 							  	<a class="nav-link opciones_menu" href="#">
-									<img class="imgSvg" src="img/font-icons/bell.svg" alt="">
-									<span class="nombre_opciones">Notificaciones</span>
+									<img class="img_icono_menu" src="img/iconos-menu_principal/bell.svg" alt="Icono notificaciones" data-bs-toggle="tooltip" data-bs-placement="top" title="Notificaciones">
+									<span class="nombre_opciones_menu">Notificaciones</span>
 								</a>
 							</li>
 							<li class="nav-item">
 							  	<a class="nav-link opciones_menu" href="#">
-									<img class="imgSvg" src="img/font-icons/plus-circle.svg" alt="">							  
-									<span class="nombre_opciones">Postear</span>
+									<img class="img_icono_menu" src="img/iconos-menu_principal/plus-circle.svg" alt="Icono postear una publicación" data-bs-toggle="tooltip" data-bs-placement="top" title="Postear una imágen">
+									<span class="nombre_opciones_menu">Postear</span>
 								</a>
 							</li>
 							<li class="nav-item">
 							  	<a class="nav-link opciones_menu" href="#">
-									<img class="imgSvg" src="img/font-icons/sliders.svg" alt="">
-									<span class="nombre_opciones">Configuración</span>
+									<img class="img_icono_menu" src="img/iconos-menu_principal/sliders.svg" alt="Icono configuraciones" data-bs-toggle="tooltip" data-bs-placement="top" title="Configuraciones">
+									<span class="nombre_opciones_menu">Configuración</span>
 								</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link opciones_menu" href="#">
-									<img class="imgSvg" src="img/font-icons/user.svg" alt="">									  
-									<span class="nombre_opciones">Magaly Jimenez</span>
+									<img class="img_icono_menu" src="img/iconos-menu_principal/user.svg" alt="Icono perfil de usuario" data-bs-toggle="tooltip" data-bs-placement="top" title="Perfil de usuario">
+									<span class="nombre_opciones_menu">Magaly Jimenez</span>
 								</a>
 							</li>
 						</ul>
@@ -124,7 +124,15 @@
 		</div>
 		<!--Fin Contenedor-->
 
+
 		<!--Bootstrap v5.3.2-->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+		<script>
+			var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+			var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+			return new bootstrap.Tooltip(tooltipTriggerEl)
+			})
+		</script>
 	</body>
 </html>

@@ -39,12 +39,13 @@ div.contenedor_menu_lateral_inferior {
     background-color: rgba(255,255,255,0.95);
 }
 /*Nombre de opciones*/
-/*span.nombre_opciones {
-    /*display: none;
-}*/
-/*Iconos*/
-img.imgSvg {
-    width: 20px;
+span.nombre_opciones_menu {
+    display: none;
+}
+/*Iconos de menu*/
+img.img_icono_menu {
+    transition: all 0.3s ease 0s;
+    width: 1.2rem;
 }
 
 /*Fin Menu inferior*/
