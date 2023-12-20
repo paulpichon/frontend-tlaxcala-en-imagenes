@@ -42,10 +42,13 @@ div.contenedor_menu_lateral_inferior {
 span.nombre_opciones_menu {
     display: none;
 }
+/*etiqueta a*/
+a.opciones_menu {
+    padding: 10px 15px;
+}
 /*Iconos de menu*/
 img.img_icono_menu {
-    transition: all 0.3s ease 0s;
-    width: 1.2rem;
+    width: 1.5rem;
 }
 
 /*Fin Menu inferior*/
@@ -78,6 +81,19 @@ No media query for `xs` since this is the default in Bootstrap*/
         margin-top: 7px;
     }
     /*Fin Titulo Tlaxcala En Imágenes*/
+
+    /*Menu inferior*/
+    /*etiqueta a*/
+    a.opciones_menu {
+        padding: 10px 35px;
+    }
+    /*Iconos de menu*/
+    img.img_icono_menu {
+        width: 1.8rem;
+    }
+
+    /*Fin Menu inferior*/
+
 }
 
 /*Medium devices (tablets, 768px and up)*/
