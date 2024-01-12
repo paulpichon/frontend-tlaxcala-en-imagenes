@@ -14,7 +14,12 @@ div.contenedor_menu_superior{
 h1.titulo_principal_h1{
     color: #EBCA9A;
     font-family: 'League Gothic', sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
+    margin: 5px 0;
+}
+/*Por TAD*/
+h6.por_tad {
+    display: none;
 }
 /*subtitulo_h6 por tad*/
 h6.subtitulo_h6 {
@@ -53,12 +58,20 @@ img.img_icono_menu {
 
 /*Fin Menu inferior*/
 
-
-
 /* Div publicidad/sugerencias */
 div.sugerencias {
     display: none;
 }
+
+
+/*ESTILOS A ENCABEZADO PUBLICACION*/
+/*Link con imagen de perfil*/
+a.link_perfil_img img {
+    height: 45px;
+    margin: 5px 0px;
+    width: 45px;
+}
+
 
 
 /*X-Small devices (portrait phones, less than 576px)
