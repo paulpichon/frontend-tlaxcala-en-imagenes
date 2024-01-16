@@ -71,6 +71,11 @@ a.link_perfil_img img {
     margin: 5px 0px;
     width: 45px;
 }
+/*Nombre de usuario*/
+h5.nombre_usuario_publicacion {
+    font-size: 1rem;
+    margin: 5px 0;
+}
 
 
 
