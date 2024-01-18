@@ -73,13 +73,26 @@ a.link_perfil_img img {
 }
 /*Nombre de usuario*/
 h5.nombre_usuario_publicacion {
-    font-size: 1rem;
-    margin: 5px 0;
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    margin: 7px 0;
 }
 /*Link del nombre de perfil*/
 a.link_perfil_usuario {
     text-decoration: none;
     color: #000000;
+}
+/*ubicacion nombre del municipio*/
+p.ubicacion {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+}
+/*Boton de opciones en la publicacion*/
+button.btn_opciones_modal {
+    background-color: transparent;
+    border: 0;
+    margin-top: 10px;
 }
 
 
@@ -112,8 +125,24 @@ No media query for `xs` since this is the default in Bootstrap*/
     img.img_icono_menu {
         width: 1.8rem;
     }
-
     /*Fin Menu inferior*/
+
+    /*ESTILOS A ENCABEZADO PUBLICACION*/
+    /*Link con imagen de perfil*/
+    a.link_perfil_img img {
+        height: 65px;
+        width: 65px;
+    }
+    /*Nombre de usuario*/
+    h5.nombre_usuario_publicacion {
+        font-size: 1.3rem;
+    }
+    /*Link del nombre de perfil*/
+    a.link_perfil_usuario {
+        text-decoration: none;
+        color: #000000;
+    }
+
 
 }
 
