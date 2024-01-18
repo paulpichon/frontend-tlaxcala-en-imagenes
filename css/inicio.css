@@ -1,5 +1,5 @@
 /*contenedores border*/
-div.contenedor_menu_lateral_inferior, div.contenedor_menu_superior, div.contenedor_contenido_principal, div.contenedor_sugerencias, div.container-xxl {
+div.contenedor_menu_lateral_inferior, div.contenedor_menu_superior, div.contenedor_contenido_principal, div.contenedor_sugerencias, div.contenedor_principal {
     border: solid 1px black;
 }
 
@@ -76,7 +76,11 @@ h5.nombre_usuario_publicacion {
     font-size: 1rem;
     margin: 5px 0;
 }
-
+/*Link del nombre de perfil*/
+a.link_perfil_usuario {
+    text-decoration: none;
+    color: #000000;
+}
 
 
 /*X-Small devices (portrait phones, less than 576px)
@@ -138,4 +142,18 @@ No media query for `xs` since this is the default in Bootstrap*/
  }
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) {  }
+@media (min-width: 1400px) { 
+    /*este contenedor es igual a container-xxl de bootstrap*/
+    /*Lo cambio porque necesito que se quite el margen del container-xxl en todas las medidas antes de los 1400px*/
+    /*Ademas se puso la clase g-0 para quitar los padding a las columnas en el div del row*/
+    div.contenedor_principal {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1320px;
+    }
+ }
