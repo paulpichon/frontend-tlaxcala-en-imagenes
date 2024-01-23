@@ -67,9 +67,8 @@ div.sugerencias {
 /*ESTILOS A ENCABEZADO PUBLICACION*/
 /*Link con imagen de perfil*/
 a.link_perfil_img img {
-    height: 45px;
-    margin: 5px 0px;
-    width: 45px;
+    height: 60px;
+    width: 60px;
 }
 /*Nombre de usuario*/
 h5.nombre_usuario_publicacion {
@@ -92,7 +91,6 @@ p.ubicacion {
 button.btn_opciones_modal {
     background-color: transparent;
     border: 0;
-    margin-top: 10px;
 }
 
 
