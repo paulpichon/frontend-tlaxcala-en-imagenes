@@ -17,21 +17,9 @@ h1.titulo_principal_h1{
     font-size: 1.8rem;
     margin: 5px 0;
 }
-/*Por TAD*/
-h6.por_tad {
-    display: none;
-}
 /*subtitulo_h6 por tad*/
 h6.subtitulo_h6 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.8rem;
-}
-/*span_tad TAD*/
-span.span_tad {
-    color: #EBCA9A;
-    font-weight: bold;
-    margin-left: 70px;
-    font-size: 0.9rem;
+    display: none;
 }
 /*Fin Titulo Tlaxcala En Imágenes*/
 
@@ -56,15 +44,19 @@ img.img_icono_menu {
     width: 1.5rem;
 }
 
-/*Fin Menu inferior*/
+/*
+*
+*   Fin Menu inferior
+*
+*/
 
-/* Div publicidad/sugerencias */
-div.sugerencias {
-    display: none;
-}
 
 
-/*ESTILOS A ENCABEZADO PUBLICACION*/
+/*
+*
+* ESTILOS A ENCABEZADO PUBLICACION
+*
+*/
 /*Link con imagen de perfil*/
 a.link_perfil_img img {
     height: 60px;
@@ -94,12 +86,27 @@ button.btn_opciones_modal {
 }
 
 
+
+/*
+*
+*   Div publicidad/sugerencias
+*
+*/
+div.sugerencias {
+    display: none;
+}
+
+
 /*X-Small devices (portrait phones, less than 576px)
 No media query for `xs` since this is the default in Bootstrap*/
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { 
-    /*Titulo Tlaxcala En Imágenes*/
+    /*
+    *
+    *Titulo Tlaxcala En Imágenes
+    *
+    */
     h1.titulo_principal_h1{
         font-size: 2.4rem;
     }
@@ -125,7 +132,11 @@ No media query for `xs` since this is the default in Bootstrap*/
     }
     /*Fin Menu inferior*/
 
-    /*ESTILOS A ENCABEZADO PUBLICACION*/
+    /*
+    *
+    *   ESTILOS A ENCABEZADO PUBLICACION
+    *
+    */
     /*Link con imagen de perfil*/
     a.link_perfil_img img {
         height: 65px;
@@ -133,19 +144,95 @@ No media query for `xs` since this is the default in Bootstrap*/
     }
     /*Nombre de usuario*/
     h5.nombre_usuario_publicacion {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
-    /*Link del nombre de perfil*/
-    a.link_perfil_usuario {
-        text-decoration: none;
-        color: #000000;
+    /*ubicacion nombre del municipio*/
+    p.ubicacion {
+        font-size: 0.9rem;
     }
+    /*Boton de opciones en la publicacion*/
+    button.btn_opciones_modal {
+        width: 100%;
+        height: 20px;
+    }
+
+
+
 
 
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
+    /*
+    *
+    *Titulo Tlaxcala En Imágenes
+    *
+    */
+    h1.titulo_principal_h1{
+        font-size: 4rem;
+    }
+    /*subtitulo_h6 por tad*/
+    h6.subtitulo_h6 {
+        font-size: 1.2rem;
+    }
+    /*subtitulo_h6 por tad*/
+    h6.subtitulo_h6 {
+        display: block;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.8rem;
+    }
+    /*Por TAD*/
+    h6.por_tad {
+        font-size: 0.9rem;
+    }
+    /*span_tad TAD*/
+    span.span_tad {
+        color: #EBCA9A;
+        font-weight: bold;
+        margin-left: 70px;
+        font-size: 1rem;
+    }
+    /*Fin Titulo Tlaxcala En Imágenes*/
+
+    /*Menu inferior*/
+    /*etiqueta a*/
+    a.opciones_menu {
+        padding: 10px 35px;
+    }
+    /*Iconos de menu*/
+    img.img_icono_menu {
+        width: 1.8rem;
+    }
+    /*Fin Menu inferior*/
+
+    /*
+    *
+    *   ESTILOS A ENCABEZADO PUBLICACION
+    *
+    */
+    /*Link con imagen de perfil*/
+    a.link_perfil_img img {
+        height: 65px;
+        width: 65px;
+    }
+    /*Nombre de usuario*/
+    h5.nombre_usuario_publicacion {
+        font-size: 1.5rem;
+    }
+    /*ubicacion nombre del municipio*/
+    p.ubicacion {
+        font-size: 0.9rem;
+    }
+    /*Boton de opciones en la publicacion*/
+    button.btn_opciones_modal {
+        width: 100%;
+        height: 20px;
+    }
+
+
+
+
     /*Contenedor menu lateral-superior*/
     div.contenedor_menu_lateral_inferior {
         position: sticky;
