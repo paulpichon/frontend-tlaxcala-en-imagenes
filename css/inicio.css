@@ -83,9 +83,9 @@ p.ubicacion {
 button.btn_opciones_modal {
     background-color: transparent;
     border: 0;
+    width: 100%;
+    height: 40px;
 }
-
-
 
 /*
 *
@@ -150,16 +150,6 @@ No media query for `xs` since this is the default in Bootstrap*/
     p.ubicacion {
         font-size: 0.9rem;
     }
-    /*Boton de opciones en la publicacion*/
-    button.btn_opciones_modal {
-        width: 100%;
-        height: 20px;
-    }
-
-
-
-
-
 }
 
 /*Medium devices (tablets, 768px and up)*/
@@ -174,13 +164,8 @@ No media query for `xs` since this is the default in Bootstrap*/
     }
     /*subtitulo_h6 por tad*/
     h6.subtitulo_h6 {
-        font-size: 1.2rem;
-    }
-    /*subtitulo_h6 por tad*/
-    h6.subtitulo_h6 {
         display: block;
         font-family: 'Open Sans', sans-serif;
-        font-size: 0.8rem;
     }
     /*Por TAD*/
     h6.por_tad {
@@ -198,7 +183,7 @@ No media query for `xs` since this is the default in Bootstrap*/
     /*Menu inferior*/
     /*etiqueta a*/
     a.opciones_menu {
-        padding: 10px 35px;
+        text-align: center;
     }
     /*Iconos de menu*/
     img.img_icono_menu {
@@ -224,15 +209,6 @@ No media query for `xs` since this is the default in Bootstrap*/
     p.ubicacion {
         font-size: 0.9rem;
     }
-    /*Boton de opciones en la publicacion*/
-    button.btn_opciones_modal {
-        width: 100%;
-        height: 20px;
-    }
-
-
-
-
     /*Contenedor menu lateral-superior*/
     div.contenedor_menu_lateral_inferior {
         position: sticky;
@@ -245,7 +221,59 @@ No media query for `xs` since this is the default in Bootstrap*/
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
- }
+    /*
+    *
+    *Titulo Tlaxcala En Imágenes
+    *
+    */
+    h1.titulo_principal_h1{
+        font-size: 5rem;
+    }
+    /*Por TAD*/
+    h6.por_tad {
+        font-size: 1.1rem;
+    }
+    /*span_tad TAD*/
+    span.span_tad {
+        margin-left: 90px;
+        font-size: 1.3rem;
+    }
+    /*Fin Titulo Tlaxcala En Imágenes*/
+
+    /*Menu inferior*/
+    /*etiqueta a*/
+    a.opciones_menu {
+        /* text-align: center; */
+    }
+    /*Iconos de menu*/
+    img.img_icono_menu {
+        width: 1.8rem;
+    }
+    /*Fin Menu inferior*/
+    
+    /*
+    *
+    *   ESTILOS A ENCABEZADO PUBLICACION
+    *
+    */
+    /* contenedor encabezado_publicacion */
+    div.contenedor_encabezado_publicacion {
+        margin: 15px 0;
+    }
+    /*Link con imagen de perfil*/
+    a.link_perfil_img img {
+        height: 80px;
+        width: 80px;
+    }
+    /*Nombre de usuario*/
+    h5.nombre_usuario_publicacion {
+        font-size: 2.5rem;
+    }
+    /*ubicacion nombre del municipio*/
+    p.ubicacion {
+        font-size: 1.1rem;
+    }
+}
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
