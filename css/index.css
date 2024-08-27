@@ -19,11 +19,12 @@ div.contenedor_tei_index{
 h1.titulo_principal_h1{
     color: #EBCA9A;
     font-family: 'League Gothic', sans-serif;
-    font-size: 2.7rem;
+    font-size: 2rem;
 }
 /*subtitulo_h6 por tad*/
 h6.subtitulo_h6 {
     font-family: 'Open Sans', sans-serif;
+    font-size: .8rem;
 }
 /*span_tad TAD*/
 span.span_tad {
@@ -34,8 +35,7 @@ span.span_tad {
 }
 /*contenedor_enlaces_index*/
 div.contenedor_enlaces_index{
-    padding: 10px;
-    margin-top: 10%;
+    padding: 0px 5px 5px 5px;
 }
 /*contenedor_titulos unete hoy*/
 div.contenedor_titulos {
@@ -45,21 +45,17 @@ div.contenedor_titulos {
 h3.subtitulo_h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    font-size: 1.2rem;
-    padding: 10px 0;
+    font-size: .8rem;
 }
 /*subtitulo_h4*/
 h4.subtitulo_h4 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 300;
-    padding: 10px 0;
 }
 /*contenedor_enlaces botones*/
 div.contenedor_enlaces{
     text-align: center;
-    margin: 20px 0;
-    padding: 10px;
 }
 
 /*a_links botones links*/
@@ -67,14 +63,14 @@ a.a_links {
     /*estilos del boton*/
     display: block;
     border: 2px solid #000000;
-    margin: 15px 0;  
+    margin: 7px 0;  
     border-radius: 20px; 
-    padding: 8px 0; 
+    padding: 6px 0; 
     /*estilos de texto del boton*/
     color: #000000;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: .8rem;
     /*EFECTOS*/
     transition: all 0.3s ease 0s;
 
@@ -93,7 +89,7 @@ img.google_icon {
 /*span_o*/
 span.span_o {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.2rem;
+    font-size: .8rem;
 }
 /*pie_pagina_index*/
 div.pie_pagina_index{
@@ -131,6 +127,7 @@ a.tad:hover {
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { 
+    
     /*contenedor contenedor_tei_index*/
     div.contenedor_tei_index{
         padding: 20px;

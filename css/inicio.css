@@ -241,10 +241,6 @@ No media query for `xs` since this is the default in Bootstrap*/
     /*Fin Titulo Tlaxcala En Imágenes*/
 
     /*Menu inferior*/
-    /*etiqueta a*/
-    a.opciones_menu {
-        /* text-align: center; */
-    }
     /*Iconos de menu*/
     img.img_icono_menu {
         width: 1.8rem;
@@ -277,6 +273,37 @@ No media query for `xs` since this is the default in Bootstrap*/
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+    /*Menu inferior*/
+    /*Iconos de menu*/
+    img.img_icono_menu {
+        width: 1.8rem;
+    }
+    /*Fin Menu inferior*/
+    
+    /*
+    *
+    *   ESTILOS A ENCABEZADO PUBLICACION
+    *
+    */
+    /* contenedor encabezado_publicacion */
+    div.contenedor_encabezado_publicacion {
+        margin: 15px 0;
+    }
+    /*Link con imagen de perfil*/
+    a.link_perfil_img img {
+        height: 80px;
+        width: 80px;
+    }
+    /*Nombre de usuario*/
+    h5.nombre_usuario_publicacion {
+        font-size: 2.5rem;
+    }
+    /*ubicacion nombre del municipio*/
+    p.ubicacion {
+        font-size: 1.1rem;
+    }
+
+
     /* Div publicidad/sugerencias */
     div.sugerencias {
         display: block;
