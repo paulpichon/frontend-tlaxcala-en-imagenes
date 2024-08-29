@@ -80,6 +80,15 @@ button.boton_registrarse:hover {
     background-color: #EBCA9A;
     color: #FFFFFF;
 }
+/*Parrafo Link iniciar sesion*/
+p.pregunta {
+    font-family: 'Open Sans', sans-serif;
+}
+/* enlace recuperar contraseña */
+a.enlace_recuperar_password {
+    color: #000000;
+    text-decoration: none;
+}
 /*PIE DE PAGINA*/
 /*pie_pagina_index*/
 div.pie_pagina_index{
@@ -131,6 +140,10 @@ a.tad:hover {
         margin-left: 80px;
         margin-top: 10px;
     }
+    /*Parrafo Link iniciar sesion*/
+    p.pregunta {
+        font-size: 1.1rem;
+    }
     /*pie_pagina_index*/
     div.pie_pagina_index{
         padding: 10px;
@@ -167,6 +180,10 @@ a.tad:hover {
         font-size: 1.3rem;
         padding: 4px 30px;
     }
+    /*Parrafo Link iniciar sesion*/
+    p.pregunta {
+        font-size: 1.2rem;
+    }
     /*Links de pie de pagina*/
     a.pie_pagina_links {
         font-size: 1.2rem;
@@ -191,6 +208,10 @@ a.tad:hover {
         font-size: 1.3rem;
         padding: 4px 30px;
     }
+    /*Parrafo Link iniciar sesion*/
+    p.pregunta {
+        font-size: 1.2rem;
+    }
     /*pie_pagina_index*/
     div.pie_pagina_index{
         padding: 10px;
@@ -205,7 +226,12 @@ a.tad:hover {
     }
 }
 /*X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    /*Parrafo Link iniciar sesion*/
+    p.pregunta {
+        margin-top: 40px;
+    }
+}
 /* XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) { 
     /*Boton registrarse*/
