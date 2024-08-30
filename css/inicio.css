@@ -37,13 +37,16 @@ span.nombre_opciones_menu {
 }
 /*etiqueta a*/
 a.opciones_menu {
+    color: #EBCA9A;
     padding: 10px 15px;
+    /*EFECTOS*/
+    transition: all 0.3s ease 0s;
 }
-/*Iconos de menu*/
-img.img_icono_menu {
-    width: 1.5rem;
+/* hover iconos menu*/
+a.opciones_menu:hover {
+    background-color:rgb(235, 202, 154, 0.2);
+    color: #EBCA9A;
 }
-
 /*
 *
 *   Fin Menu inferior
@@ -85,6 +88,31 @@ button.btn_opciones_modal {
     border: 0;
     width: 100%;
     height: 40px;
+}
+/* Yollotl */
+/* img.yollotl {   
+    width: 25px;
+} */
+/* experimento */
+.like-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.like-button svg {
+    color: black;
+    stroke-width: 2px;
+    width: 24px;
+    height: 24px;
+    transition: color 0.3s ease, stroke-width 0.3s ease;
+}
+
+.like-button.liked svg {
+    fill: #EBCA9A; /*Relleno del icono*/
+    stroke: #EBCA9A; /* Para cambiar el color de la línea del ícono */
+    stroke-width: 2.5px;
 }
 
 /*

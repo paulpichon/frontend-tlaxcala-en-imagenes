@@ -12,6 +12,9 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
+		<!-- Iconos https://unpkg.com/feather-icons -->
+		 <!-- Analizar si debemos descargar los recurso o solo con el link esta bien https://feathericons.com/ -->
+		<script src="https://unpkg.com/feather-icons"></script>
 	</head>
 	<body>
 
@@ -24,37 +27,37 @@
 					<div class="contenedor_menu_lateral_inferior fixed-bottom">
 						<ul class="nav justify-content-center menu_inferior_lateral">
 							<li class="nav-item">
-								<a class="nav-link opciones_menu active" aria-current="page" href="#">
+								<a class="nav-link opciones_menu active" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="top" title="Inicio" href="#">
 									<!--https://feathericons.com/-->
-									<img class="img_icono_menu" src="img/iconos-menu_principal/home.svg" alt="Icono Inicio" data-bs-toggle="tooltip" data-bs-placement="top" title="Inicio">
+									<i  data-feather="home"></i>
 									<span class="nombre_opciones_menu">Home</span>
 								</a>
 							</li>
 							<li class="nav-item">
-							  	<a class="nav-link opciones_menu" href="#">
+							  	<a class="nav-link opciones_menu" data-bs-toggle="tooltip" data-bs-placement="right" title="Notificaciones" href="#">
 									<!--https://feathericons.com/-->
-									<img class="img_icono_menu" src="img/iconos-menu_principal/bell.svg" alt="Icono notificaciones" data-bs-toggle="tooltip" data-bs-placement="top" title="Notificaciones">
+									<i  data-feather="bell"></i>
 									<span class="nombre_opciones_menu">Notificaciones</span>
 								</a>
 							</li>
 							<li class="nav-item">
-							  	<a class="nav-link opciones_menu" href="#">
+							  	<a class="nav-link opciones_menu" data-bs-toggle="tooltip" data-bs-placement="right" title="Postear una imágen" href="#">
 									<!--https://feathericons.com/-->
-									<img class="img_icono_menu" src="img/iconos-menu_principal/plus-circle.svg" alt="Icono postear una publicación" data-bs-toggle="tooltip" data-bs-placement="top" title="Postear una imágen">
+									<i  data-feather="plus-circle"></i>
 									<span class="nombre_opciones_menu">Postear</span>
 								</a>
 							</li>
 							<li class="nav-item">
-							  	<a class="nav-link opciones_menu" href="#">
+							  	<a class="nav-link opciones_menu" alt="Icono configuraciones" data-bs-toggle="tooltip" data-bs-placement="right" title="Configuraciones" href="#">
 									<!--https://feathericons.com/-->
-									<img class="img_icono_menu" src="img/iconos-menu_principal/sliders.svg" alt="Icono configuraciones" data-bs-toggle="tooltip" data-bs-placement="top" title="Configuraciones">
+									<i  data-feather="sliders"></i>
 									<span class="nombre_opciones_menu">Configuración</span>
 								</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link opciones_menu" href="#">
+								<a class="nav-link opciones_menu" data-bs-toggle="tooltip" data-bs-placement="right" title="Perfil de usuario" href="#">
 									<!--https://feathericons.com/-->
-									<img class="img_icono_menu" src="img/iconos-menu_principal/user.svg" alt="Icono perfil de usuario" data-bs-toggle="tooltip" data-bs-placement="top" title="Perfil de usuario">
+									<i  data-feather="user"></i>
 									<span class="nombre_opciones_menu">Magaly Jimenez</span>
 								</a>
 							</li>
@@ -98,7 +101,7 @@
 											<!--Este va a ser un modal-->
 											<!-- Button trigger modal -->
 											<button type="button" class="btn_opciones_modal" data-bs-toggle="modal" data-bs-target="#modalOpciones">
-												<img class="icono_opciones_modal" src="img/iconos-menu_principal/more-horizontal.svg" alt="Opciones">
+												<i  data-feather="more-horizontal"></i>
 											</button>
 										</div>
 									</div>
@@ -114,8 +117,20 @@
 							<div class="contenedor_publicacion">
 								<div class="footer_publicacion">
 									<!--https://feathericons.com/-->
-									<img class="w-25" src="img/iconos-menu_principal/heart.svg" alt="Yollotls">	
-									<p class="d-inline votaciones">159,234 <strong>Yóllotls</strong></p>
+									<!-- experimento -->
+									<!-- <button id="likeButton" data-post-id="POST_ID" class="yollotl">
+										<img class="yollotl" src="img/iconos-menu_principal/heart.svg" alt="Yollotls">
+									</button> -->
+									<!-- <p class="d-inline votaciones">159,234 <strong>Yóllotls</strong></p> -->
+
+									<!-- experimento -->
+									<button id="likeButton" data-post-id="POST_ID" class="like-button">
+										<i data-feather="heart"></i>
+									</button>
+									<span id="likeCount">0</span>
+
+
+
 								</div>
 							</div>
 						</div>
@@ -160,13 +175,19 @@
 
 		<!--Bootstrap v5.3.2-->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+		<script src="js/like.js"></script>
 
 		<script>
-			//Tooltip bootstrap
-			const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-			
-			const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-				return new bootstrap.Tooltip(tooltipTriggerEl)
+			// Renderiza todos los íconos de Feather al cargar la página.
+			document.addEventListener('DOMContentLoaded', function() {
+				feather.replace(); // Renderiza los íconos de Feather al cargar la página.
+
+				//Tooltip bootstrap
+				const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+				
+				const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+					return new bootstrap.Tooltip(tooltipTriggerEl)
+				});
 			});
 		</script>
 	</body>
