@@ -65,6 +65,10 @@ a.postear {
 * ESTILOS A ENCABEZADO PUBLICACION
 *
 */
+/* div.contenedor_publicaciones */
+div.contenedor_publicaciones {
+    border-bottom: 1px solid #EBCA9A ;
+}
 /*Link con imagen de perfil*/
 a.link_perfil_img img {
     height: 60px;
@@ -99,7 +103,7 @@ button.like-button {
     border: none;
     background: none;
     cursor: pointer;
-    padding: 0;
+    padding: 15px 0 15px 10px;
     margin: 5px 0;
 }
 /* SVG icon */
@@ -252,6 +256,10 @@ No media query for `xs` since this is the default in Bootstrap*/
     /* li.nav-item */
     li.nav-item{
         margin: 15px 0;
+    }
+    /* div contenedor_publicaciones */
+    div.contenedor_publicaciones {
+        margin: 20px 0 30px 0;
     }
  }
 
