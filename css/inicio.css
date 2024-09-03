@@ -89,27 +89,24 @@ button.btn_opciones_modal {
     width: 100%;
     height: 40px;
 }
-/* Yollotl */
-/* img.yollotl {   
-    width: 25px;
-} */
-/* experimento */
-.like-button {
+/* Boton me gusta */
+button.like-button {
     border: none;
     background: none;
     cursor: pointer;
     padding: 0;
+    margin: 5px 0;
 }
-
-.like-button svg {
+/* SVG icon */
+button.like-button svg {
     color: black;
     stroke-width: 2px;
     width: 24px;
     height: 24px;
     transition: color 0.3s ease, stroke-width 0.3s ease;
 }
-
-.like-button.liked svg {
+/* Se agrega la clase para cambiar el color del corazon */
+button.like-button.liked svg {
     fill: #EBCA9A; /*Relleno del icono*/
     stroke: #EBCA9A; /* Para cambiar el color de la línea del ícono */
     stroke-width: 2.5px;
@@ -242,8 +239,14 @@ No media query for `xs` since this is the default in Bootstrap*/
         position: sticky;
         top: 0;
     }
+    /* estilos a ul.menu_inferior_lateral */
     ul.menu_inferior_lateral{
         flex-direction: column;
+        margin-top: 30px ;
+    }
+    /* li.nav-item */
+    li.nav-item{
+        margin: 15px 0;
     }
  }
 
