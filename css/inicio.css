@@ -47,6 +47,11 @@ a.opciones_menu:hover {
     background-color:rgb(235, 202, 154, 0.2);
     color: #EBCA9A;
 }
+/* Boton POSTEAR */
+a.postear {
+    background-color:#EBCA9A;
+    color: white;
+}
 /*
 *
 *   Fin Menu inferior
