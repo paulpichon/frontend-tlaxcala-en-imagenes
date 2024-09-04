@@ -347,10 +347,22 @@ No media query for `xs` since this is the default in Bootstrap*/
         font-size: 1.1rem;
     }
 
-
     /* Div publicidad/sugerencias */
+    /* Se muestra el DIV SUGERENCIAS */
     div.sugerencias {
         display: block;
+    }
+    /* link imagen mas votadas */
+    a.link_imagen_mas_votadas {
+        text-decoration: none;
+    }
+    /* nombre de usuario imagenes mas votadas */
+    h6.titulo_card {
+        font-weight: bold;
+    }
+    /* numero de me gustas */
+    p.numero_me_gustas {
+        font-size: .8rem;
     }
  }
 
