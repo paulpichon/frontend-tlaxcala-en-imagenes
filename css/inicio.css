@@ -352,6 +352,13 @@ No media query for `xs` since this is the default in Bootstrap*/
     div.sugerencias {
         display: block;
     }
+    /* Publicidad leyenda */
+    p.publicidad {
+        font-family: 'Open Sans', sans-serif;
+        font-size: .8rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
     /* link imagen mas votadas */
     a.link_imagen_mas_votadas {
         text-decoration: none;
