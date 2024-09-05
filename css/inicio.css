@@ -1,8 +1,11 @@
 /*contenedores border*/
 div.contenedor_menu_lateral_inferior, div.contenedor_menu_superior, div.contenedor_contenido_principal, div.contenedor_sugerencias, div.contenedor_principal {
-    border: solid 1px black;
+    /* border: solid 1px black; */
 }
-
+/* border menu superior */
+div.contenedor_menu_superior {
+    border-bottom: 1px solid #EBCA9A;
+}
 
 /*contenedor contenedor_tei_index*/
 div.contenedor_menu_superior{
@@ -188,6 +191,10 @@ No media query for `xs` since this is the default in Bootstrap*/
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
+    /* border */
+    div.contenedor_contenido_principal {
+        border: 1px solid #EBCA9A;
+    }
     /*
     *
     *Titulo Tlaxcala En Imágenes
