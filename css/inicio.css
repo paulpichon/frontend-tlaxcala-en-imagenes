@@ -193,7 +193,8 @@ No media query for `xs` since this is the default in Bootstrap*/
 @media (min-width: 768px) { 
     /* border */
     div.contenedor_central_contenido {
-        border: 1px solid rgb(127, 127, 127, 0.2);
+        border: 2px solid rgb(127, 127, 127, 0.2);
+        padding: 10px;
     }
     /*
     *
