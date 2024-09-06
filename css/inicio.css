@@ -360,6 +360,25 @@ No media query for `xs` since this is the default in Bootstrap*/
     p.numero_me_gustas {
         font-size: .8rem;
     }
+    /* enlaces footer sugerencias */
+    a.enlaces_footer_sugerencias {
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        font-size: .8rem;
+        color: rgb(127, 127, 127, 0.4);
+        font-weight: bold; 
+        margin: 15px 0;
+    }
+    /* hover */
+    a.enlaces_footer_sugerencias:hover {
+        text-decoration: underline;
+        color: rgb(127, 127, 127, 0.6);
+    }
+    /* TLAXCALA EN IMAGENES FOOTER */
+    h6.tei_footer_sugerencias {
+        font-size: .8rem;
+        color: rgb(127, 127, 127, 0.5);
+    }
  }
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
