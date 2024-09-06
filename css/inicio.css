@@ -18,7 +18,6 @@ h1.titulo_principal_h1{
     color: #EBCA9A;
     font-family: 'League Gothic', sans-serif;
     font-size: 1.8rem;
-    margin: 5px 0;
 }
 /*subtitulo_h6 por tad*/
 h6.subtitulo_h6 {
@@ -194,7 +193,9 @@ No media query for `xs` since this is the default in Bootstrap*/
     /* border */
     div.contenedor_central_contenido {
         border: 2px solid rgb(127, 127, 127, 0.2);
-        padding: 10px;
+        border-top: 0;
+        /* Dar un padding al contenedor central */
+        padding: 0 10px 10px 10px;
     }
     /*
     *
@@ -259,7 +260,7 @@ No media query for `xs` since this is the default in Bootstrap*/
     /* estilos a ul.menu_inferior_lateral */
     ul.menu_inferior_lateral{
         flex-direction: column;
-        margin-top: 30px ;
+        /* margin-top: 30px ; */
     }
     /* li.nav-item */
     li.nav-item{
