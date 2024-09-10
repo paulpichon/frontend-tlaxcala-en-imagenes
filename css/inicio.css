@@ -65,7 +65,25 @@ a.postear {
 */
 /* div.contenedor_publicaciones */
 div.contenedor_publicaciones {
-    border-bottom: 1px solid #EBCA9A ;
+    border-bottom: 1px solid #EBCA9A;
+}
+/* Boton opciones de la publicacion */
+a.btn_opciones_publicaciones {
+    width: 100%;
+    border-bottom: 1px solid rgb(127, 127, 127, 0.2);
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000000;
+    margin: 7px;
+    font-weight: bold;
+}
+/* btn seguir */
+a.btn_seguir {
+    color: #EBCA9A ;
+}
+/* opcion roja */
+a.btn_rojo {
+    color: red;
 }
 /*Link con imagen de perfil*/
 a.link_perfil_img img {
