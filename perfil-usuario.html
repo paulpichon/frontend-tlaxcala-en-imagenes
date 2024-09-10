@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Tlaxcala En Imágenes - Inicio</title>
+		<title>Tlaxcala En Imágenes - Magaly Jimenez</title>
 		<!--Bootstrap v5.3.2-->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 		<!--Estilos index.css-->
-		<link rel="stylesheet" href="css/inicio.css">
+		<link rel="stylesheet" href="css/perfil-usuario.css">
 		<!--Google Fonts-->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,115 +80,42 @@
 						</div>
 					<!--Fin Contenedor menu prinicpal-->
 					
-					<!-- Contenedor del contenido principal publicacion -->
+					<!-- Contenedor del contenido principal perfil de usuario -->
 					<div class="contenedor_contenido_principal">
 
-						<!-- div contenedor publicaciones -->
-						<div class="contenedor_publicaciones">
-							<!--Publicacion-->
-							<div class="container-fluid">
-								<div class="contenedor_publicacion">
-									<div class="contenedor_encabezado_publicacion">
-										<div class="row">
-											<div class="col-3 col-lg-2 d-flex justify-content-center align-items-center">
-												<a class="link_perfil_img" href="">
-													<img class="rounded-circle" data-bs-toggle="tooltip" data-bs-placement="right" title="Tania Vazquez" src="img/usuarios/375868544_6529202730509112_8617095531114370924_n.jpg" alt="Tania Vazquez">
-												</a>
-											</div>
-											<div class="col-7 col-lg-8">
-												<h5 class="nombre_usuario_publicacion">
-													<a class="link_perfil_usuario" href="">Tania Vazquez</a>
-												</h5>
-												<p class="ubicacion">Tlaxcala, Tlaxcala</p>
-											</div>
-											<div class="col-2 col-lg-2 d-flex justify-content-center align-items-center">
-												<!--Este va a ser un modal-->
-												<!-- Button trigger modal -->
-												<button type="button" class="btn_opciones_modal" data-bs-toggle="modal" data-bs-target="#modalOpciones">
-													<i  data-feather="more-horizontal"></i>
-												</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!--Imagen publicacion-->
-							<div class="publicacion_imagen">
-								<img class="img-fluid" src="img/publicaciones/285280859_1383338248818025_1316095913225178424_n.jpg" alt="">
-							</div>
-							<!--Fin Publicaciones-->
-							<div class="container-fluid">
-								<div class="contenedor_publicacion">
-									<div class="footer_publicacion">
-										<!-- Boton para dar like a la publicacion -->
-										<button id="likeButton" data-post-id="POST_ID" class="like-button">
-											<!--https://feathericons.com/-->
-											<i data-feather="heart"></i>
-										</button>
-										<p id="likeCount" class="d-inline votaciones">10009</p>
-										<!-- Yollots -->
-										<strong>Me gusta</strong>
-									</div>
-								</div>
-							</div>
-							<!--Fin Publicacion-->
-						</div>
-						<!-- div contenedor publicaciones -->
-						
-						<!-- div contenedor publicaciones -->
-						<div class="contenedor_publicaciones">
-							<!--Publicacion-->
-							<div class="container-fluid">
-								<div class="contenedor_publicacion">
-									<div class="contenedor_encabezado_publicacion">
-										<div class="row">
-											<div class="col-3 col-lg-2 d-flex justify-content-center align-items-center">
-												<a class="link_perfil_img" href="">
-													<img class="rounded-circle" data-bs-toggle="tooltip" data-bs-placement="right" title="Tania Vazquez" src="img/usuarios/375868544_6529202730509112_8617095531114370924_n.jpg" alt="Tania Vazquez">
-												</a>
-											</div>
-											<div class="col-7 col-lg-8">
-												<h5 class="nombre_usuario_publicacion">
-													<a class="link_perfil_usuario" href="">Tania Vazquez</a>
-												</h5>
-												<p class="ubicacion">Tlaxcala, Tlaxcala</p>
-											</div>
-											<div class="col-2 col-lg-2 d-flex justify-content-center align-items-center">
-												<!--Este va a ser un modal-->
-												<!-- Button trigger modal -->
-												<button type="button" class="btn_opciones_modal" data-bs-toggle="modal" data-bs-target="#modalOpciones">
-													<i  data-feather="more-horizontal"></i>
-												</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!--Imagen publicacion-->
-							<div class="publicacion_imagen">
-								<img class="img-fluid" src="img/publicaciones/285280859_1383338248818025_1316095913225178424_n.jpg" alt="">
-							</div>
-							<!--Fin Publicaciones-->
-							<div class="container-fluid">
-								<div class="contenedor_publicacion">
-									<div class="footer_publicacion">
-										<!-- Boton para dar like a la publicacion -->
-										<button id="likeButton" data-post-id="POST_ID" class="like-button">
-											<!--https://feathericons.com/-->
-											<i data-feather="heart"></i>
-										</button>
-										<p id="likeCount" class="d-inline votaciones">10009</p>
-										<!-- Yollots -->
-										<strong>Me gusta</strong>
-									</div>
-								</div>
-							</div>
-							<!--Fin Publicacion-->
-						</div>
-						<!-- div contenedor publicaciones -->
-
+                        <!-- contenedor informacion perfil usuario -->
+                        <div class="contenedor_info_usuario">
+                            <!-- row -->
+                            <div class="row">
+                                <!-- imagen de perfil -->
+                                <div class="col-3 text-center">
+                                    <img class="img_perfil_usuario rounded-circle" src="img/usuarios/375868544_6529202730509112_8617095531114370924_n.jpg" alt="">
+                                </div>
+                                <!-- informacion -->
+                                 <div class="col-6">
+                                    <div class="informacion_usuario">
+                                        <h6 class="">Magaly Jimenez</h6>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6 col-lg-6">
+                                                <p>124 imágenes</p>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-6">
+                                                <span class="">1492 seguidores</span>
+                                            </div>
+                                        </div>
+                                        <p><i data-feather="heart"></i> <span>929</span> Yóllotls</p>
+                                     </div>
+                                 </div>
+                                <!-- Seguir a usuario -->
+                                 <div class="col-3">
+                                    <div class="seguir_usuario">
+                                        <button class="btn" id="" >Seguir</button>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
 					</div>
-					<!-- Contenedor del contenido principal publicacion -->
+					<!-- Contenedor del contenido principal perfil de usuario -->
 				</div>
 				<!--Fin Contenedor Contenido Principal-->
 
