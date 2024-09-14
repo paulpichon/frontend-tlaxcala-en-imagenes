@@ -113,7 +113,7 @@
 										<div class="seguir_usuario text-center">
 											<button class="btn_seguir_usuario" id="" >Seguir</button>
 										</div>
-									</div>
+  									</div>
 								</div>
 							</div>
 						</div>
@@ -136,23 +136,31 @@
 										<!-- publicaciones -->
 										<div class=" mt-3">
 											<div class="titulo_contenedor text-center">
-												<h6 class="titulo pt-3 pb-3">PUBLICACIONES</h6>
+												<h6 class="titulo_publicaciones pt-3 pb-3">PUBLICACIONES</h6>
 											</div>
 											<div class="row g-1">
-											<!-- Imagen 1 -->
-											<div class="col-4">
-												<img data-img="img/imagenes_relleno/275700409_335093695238277_3060717699969997284_n.jpg" src="img/imagenes_250_grid_usuarios/275700409_335093695238277_3060717699969997284_n.jpg" class="imagen_grid_perfil_usuario gallery-image" alt="Imagen 1" loading="lazy">
-											</div>
-										
-											<!-- Imagen 2 -->
-											<div class="col-4">
-												<img data-img="img/imagenes_relleno/449863788_1528025958095735_4720702507067987786_n.jpg" src="img/imagenes_250_grid_usuarios/449863788_1528025958095735_4720702507067987786_n.jpg" class="imagen_grid_perfil_usuario gallery-image" alt="Imagen 2" loading="lazy">
-											</div>
-										
-											<!-- Imagen 3 -->
-											<div class="col-4">
-												<img data-img="img/imagenes_relleno/308044366_1059986788023821_4957247602976258559_n.jpg" src="img\imagenes_relleno\308044366_1059986788023821_4957247602976258559_n.jpg" class="imagen_grid_perfil_usuario gallery-image" alt="Imagen 3" loading="lazy">
-											</div>
+												<!-- Imagen 1 -->
+												<div class="col-4">
+													 <img src="img/imagenes_250_grid_usuarios/275700409_335093695238277_3060717699969997284_n.jpg" class="imagen_grid_perfil_usuario gallery-image" alt="Imagen 1" loading="lazy"> 
+												</div>
+											
+												<!-- Imagen 2 -->
+												<div class="col-4">
+													<img  src="img/imagenes_250_grid_usuarios/449863788_1528025958095735_4720702507067987786_n.jpg" class="imagen_grid_perfil_usuario gallery-image" alt="Imagen 2" loading="lazy">
+												</div>
+											
+												<!-- Imagen 3 -->
+												<div class="col-4">
+													<img  src="img\imagenes_relleno\308044366_1059986788023821_4957247602976258559_n.jpg" class="imagen_grid_perfil_usuario gallery-image" alt="Imagen 3" loading="lazy">
+												</div>
+												<!-- Imagen 3 -->
+												<div class="col-4">
+													<img  src="img\imagenes_relleno\308044366_1059986788023821_4957247602976258559_n.jpg" class="imagen_grid_perfil_usuario gallery-image" alt="Imagen 3" loading="lazy">
+												</div>
+												<!-- Imagen 3 -->
+												<div class="col-4">
+													<img  src="img\imagenes_relleno\308044366_1059986788023821_4957247602976258559_n.jpg" class="imagen_grid_perfil_usuario gallery-image" alt="Imagen 3" loading="lazy">
+												</div>
 											</div>
 										</div>
 										<!-- fin publicaciones -->
@@ -161,9 +169,8 @@
 							</div>
 						</div>
 						<!-- fin container -->
-
 					</div>
-
+					<!-- Fin Publicaciones -->
 				</div>
 				<!--Fin Contenedor Contenido Principal-->
 
@@ -274,39 +281,38 @@
 		</div>
 		<!--Fin Contenedor-->
 
-		<!-- Modal único reutilizable -->
+
+		<!-- Modal único reutilizable para expandir las imagenes -->
 		<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class="modal-body">
-				<img id="modalImage" src="" class="img-fluid">
-				</div>
-				<div class="footer_publicacion">
-					<!-- Boton para dar like a la publicacion -->
-					<button id="likeButton" data-post-id="POST_ID" class="like-button">
-						<!--https://feathericons.com/-->
-						<i data-feather="heart"></i>
-					</button>
-					<p id="likeCount" class="d-inline votaciones">10009</p>
-					<!-- Yollots -->
-					<strong>Me gusta</strong>
+			<div class="modal-dialog modal-dialog-centered  modal-lg ">
+				<div class="modal-content">
+					<div class="modal-header">
+						<!-- boton opciones -->
+						<button type="button" class="btn_opciones_modal" id="modalOpcionesPublicacion">
+							<i  data-feather="more-horizontal"></i>
+						</button>
+						<!-- boton para cerrar el modal -->
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="contenedor_imagen_expandida">
+					<img id="modalImage" src="" class="img-fluid">
+					</div>
+					<div class="footer_publicacion">
+						<button id="likeButton" data-post-id="POST_ID" class="like-button">
+							<i data-feather="heart"></i>
+						</button>
+						<p id="likeCount" class="d-inline votaciones">10009</p>
+						<strong>Me gusta</strong>
+					</div>
 				</div>
 			</div>
-			</div>
-		</div>
+		</div> 
 		<!-- fin Modal expandir imagen -->
 
-		<!-- Modal -->
+		<!-- Modal de opciones--> 
 		<div class="modal fade" id="modalOpciones" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered">
 			  <div class="modal-content">
-				<!-- <div class="modal-header">
-				  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-				  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div> -->
 				<div class="modal-body">
 					<div class="row text-center">
 						<div class="col-md-12">
@@ -334,9 +340,6 @@
 						</div>
 					</div>
 				</div>
-				<!-- <div class="modal-footer">
-				  
-				</div> -->
 			  </div>
 			</div>
 		</div>
@@ -346,8 +349,10 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 		<!-- funcionamiento del boton like -->
 		<script src="js/like.js"></script>
-		<!-- funcionamiento del modal al hacer click -->
-		<script src="js/modal-imagen.js"></script>
+		<!-- Abre el modal al hacer click -->
+		<script src="js/abril-modal-imagen.js"></script>
+		<!-- Abre/cierra modales -->
+		<script src="js/abrir-cerrar-modales-opciones.js"></script>
 
 		<script>
 			// Renderiza todos los íconos de Feather al cargar la página.
