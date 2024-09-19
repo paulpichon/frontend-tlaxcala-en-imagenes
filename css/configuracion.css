@@ -56,60 +56,28 @@ a.postear {
 *
 */
 
-/* 
+/*
 *
-Perfil de usuarios
+* 
+    Opciones de configuracion 
+*
 *
 */
-/* contenedor_info_usuario */
-div.contenedor_info_usuario {
-    padding: 10px 0;
-    border-bottom: solid 1px #EBCA9A;
+/* Lista de opciones */
+ul.lista_opciones_configuracion {
+    padding: 10px;
 }
-/* Imagen de perfil de usuario */
-img.img_perfil_usuario {
-    width: 100%;
-    height: 100%;
-    padding: 5px 0;
-}
-/* Nombre de usuario en pagina de perfil */
-h6.nombre_usuario_perfil {
-    font-family: 'League Gothic', sans-serif;
-    font-size: 1.3rem;
-    margin-top: 10px;
-}
-/* cantidad imagenes de publicaciones */
-p.cantidad_imagenes_publicaciones, p.cantidad_seguidores, p.cantidad_likes {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.9rem;
-    font-weight: lighter;
-}
-/* cantidad en numero */
-span.cantidad_numero {
-    font-weight: bold;
-    margin-right: 5px;
-}
-/* SVG */
-p.cantidad_likes svg {
-    font-size: .5rem;
-    color: #EBCA9A;
-    margin-right: 4px;
-}
-/* boton seguir usuario */
-button.btn_seguir_usuario {
-    background-color: #EBCA9A;
-    color: #ffffff;
-    margin-top: 10px;
-    border: 1px solid #EBCA9A;
-    border-radius: 5px;
-    padding: 3px 4px;
+/* li opciones */
+li.li_opciones_configuraciones {
+    margin: 15px 0;
+    list-style: none;
     
 }
-/* hover */
-button.btn_seguir_usuario:hover {
-    background-color: #ffffff;
-    transition: all .3s ease-in-out;
-    color: #EBCA9A;
+/* a opciones_configuracion */
+a.opciones_configuracion {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.1rem;
 }
 
 /* Publicaciones GRID */
@@ -125,56 +93,6 @@ img.imagen_grid_perfil_usuario {
     image-rendering: pixelated;
     cursor: pointer;
 }
-
-/* MODALES */
-/****** Modal imagen expandida *****/
-/*Boton de opciones en la publicacion*/
-button.btn_opciones_modal {
-    background-color: transparent;
-    border: 0;
-}
-/* Boton me gusta */
-button.like-button {
-    border: none;
-    background: none;
-    cursor: pointer;
-    padding: 15px 0 15px 10px;
-    margin: 5px 0;
-}
-/* SVG icon */
-button.like-button svg {
-    color: black;
-    stroke-width: 2px;
-    width: 24px;
-    height: 24px;
-    transition: color 0.3s ease, stroke-width 0.3s ease;
-}
-/* Se agrega la clase para cambiar el color del corazon */
-button.like-button.liked svg {
-    fill: #EBCA9A; /*Relleno del icono*/
-    stroke: #EBCA9A; /* Para cambiar el color de la línea del ícono */
-    stroke-width: 2.5px;
-}
-/* Modal opciones */
-/* Boton opciones de la publicacion */
-a.btn_opciones_publicaciones {
-    font-family: 'Open Sans', sans-serif;
-    width: 100%;
-    border-bottom: 1px solid rgb(127, 127, 127, 0.2);
-    font-size: 1rem;
-    text-decoration: none;
-    color: #000000;
-    margin: 7px;
-}
-/* btn seguir */
-a.btn_seguir {
-    color: #EBCA9A ;
-}
-/* opcion roja */
-a.btn_rojo {
-    color: red;
-}
-
 
 /*
 *
