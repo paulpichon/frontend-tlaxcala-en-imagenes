@@ -91,13 +91,22 @@ ul.lista_opciones_configuracion {
 li.li_opciones_configuraciones {
     margin: 15px 0;
     list-style: none;
-    
 }
 /* a opciones_configuracion */
 a.opciones_configuracion {
     color: #000000;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 10px;
+
+    /* esto es similar a decir en CSS: a.opciones_configuracion SVG  */
+    & svg {
+        color: #EBCA9A;
+        margin-right: 7px;
+        vertical-align: top;
+        font-size: 0.7rem
+    }
 }
 
 /* Publicaciones GRID */
@@ -230,6 +239,16 @@ No media query for `xs` since this is the default in Bootstrap*/
     /* li.nav-item */
     li.nav-item{
         margin: 15px 0;
+    }
+    /* Lista de opciones configuracion */
+    /* a opciones_configuracion */
+    a.opciones_configuracion {
+        font-size: 1.2rem;
+        /* esto es similar a decir en CSS: a.opciones_configuracion SVG  */
+        & svg {
+            vertical-align: middle;
+            font-size: .9rem
+        }
     }
  }
 
