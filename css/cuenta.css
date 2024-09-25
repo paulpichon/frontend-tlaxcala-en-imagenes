@@ -1,0 +1,333 @@
+/* border menu superior */
+div.contenedor_menu_superior {
+    border-bottom: 1px solid #EBCA9A;
+}
+
+/*contenedor contenedor_tei_index*/
+div.contenedor_menu_superior{
+    text-align: center;
+    /*background: linear-gradient(70deg, white, white);*/
+    background-color: rgba(255,255,255,0.95);
+}
+/*Titulo Tlaxcala En Imágenes*/
+h1.titulo_principal_h1{
+    color: #EBCA9A;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 1.8rem;
+}
+/*subtitulo_h6 por tad*/
+h6.subtitulo_h6 {
+    display: none;
+}
+/*Fin Titulo Tlaxcala En Imágenes*/
+
+/*Menu inferior*/
+/*Los estilos de este menu funcionara hasta antes de llegar al breakpoint de los 768px*/
+/*Pasados los 768px se le dara otros estilos al mismo menu*/
+
+/*.contenedor_menu_lateral_inferior*/
+div.contenedor_menu_lateral_inferior {
+    background-color: rgba(255,255,255,0.95);
+}
+/*Nombre de opciones*/
+span.nombre_opciones_menu {
+    display: none;
+}
+/*etiqueta a*/
+a.opciones_menu {
+    color: #EBCA9A;
+    padding: 10px 15px;
+    /*EFECTOS*/
+    transition: all 0.3s ease 0s;
+}
+/* hover iconos menu*/
+a.opciones_menu:hover {
+    background-color:rgb(235, 202, 154, 0.2);
+    color: #EBCA9A;
+}
+/* Boton POSTEAR */
+a.postear {
+    background-color:#EBCA9A;
+    color: white;
+}
+/*
+*
+*   Fin Menu inferior
+*
+*/
+
+/*
+*
+* 
+    Opciones de configuracion 
+*
+*
+*/
+
+/* configuracion y nombre de usuario */
+/* estilos */
+div.contenedor_configuracion_titulo {
+    border-bottom: 1px solid #EBCA9A;
+    padding: 20px 0;
+}
+/* titulo configuracion */
+h1.titulo_configuracion {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+/* nombre usuario */
+p.nombre_usuario {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 0;
+    font-size: 0.8rem;
+}
+
+/* Lista de opciones */
+ul.lista_opciones_configuracion {
+    padding: 10px;
+}
+/* li opciones */
+li.li_opciones_configuraciones {
+    margin: 15px 0;
+    list-style: none;
+}
+/* a opciones_configuracion */
+a.opciones_configuracion {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 10px;
+
+    /* esto es similar a decir en CSS: a.opciones_configuracion SVG  */
+    & svg {
+        color: #EBCA9A;
+        margin-right: 7px;
+        vertical-align: top;
+        font-size: 0.7rem
+    }
+}
+
+/* Publicaciones GRID */
+/* titulo publicaciones */
+h6.titulo_publicaciones {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+}
+/* imagen grid */
+img.imagen_grid_perfil_usuario {
+    width: 100%;
+    max-height: 100%;
+    image-rendering: pixelated;
+    cursor: pointer;
+}
+
+/*
+*
+*   Div publicidad/sugerencias
+*
+*/
+div.sugerencias {
+    display: none;
+}
+
+
+/*X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    /*
+    *
+    *Titulo Tlaxcala En Imágenes
+    *
+    */
+    h1.titulo_principal_h1{
+        font-size: 2.4rem;
+    }
+    /*subtitulo_h6 por tad*/
+    h6.subtitulo_h6 {
+        font-size: 1.1rem;
+    }
+    /*span_tad TAD*/
+    span.span_tad {
+        font-size: 1.1rem;
+        margin-top: 7px;
+    }
+    /*Fin Titulo Tlaxcala En Imágenes*/
+
+    /*Menu inferior*/
+    /*etiqueta a*/
+    a.opciones_menu {
+        padding: 10px 35px;
+    }
+    /*Iconos de menu*/
+    img.img_icono_menu {
+        width: 1.8rem;
+    }
+    /*Fin Menu inferior*/
+    
+    /* CONFIGURACION */
+
+    /* titulo configuracion */
+    h1.titulo_configuracion {
+        font-size: 1.7rem;
+    }
+    /* nombre usuario */
+    p.nombre_usuario {
+        font-size: 1rem;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    /* border */
+    div.contenedor_central_contenido {
+        border: 2px solid rgb(127, 127, 127, 0.2);
+        border-top: 0;
+        /* Dar un padding al contenedor central */
+        padding: 0 10px 10px 10px;
+    }
+    /*
+    *
+    *Titulo Tlaxcala En Imágenes
+    *
+    */
+    h1.titulo_principal_h1{
+        font-size: 4rem;
+    }
+    /*subtitulo_h6 por tad*/
+    h6.subtitulo_h6 {
+        display: block;
+        font-family: 'Open Sans', sans-serif;
+    }
+    /*Por TAD*/
+    h6.por_tad {
+        font-size: 0.9rem;
+    }
+    /*span_tad TAD*/
+    span.span_tad {
+        color: #EBCA9A;
+        font-weight: bold;
+        margin-left: 70px;
+        font-size: .8rem;
+    }
+    /*Fin Titulo Tlaxcala En Imágenes*/
+
+    /*Menu inferior*/
+    /*etiqueta a*/
+    a.opciones_menu {
+        text-align: center;
+    }
+    /*Iconos de menu*/
+    img.img_icono_menu {
+        width: 1.8rem;
+    }
+    /*Fin Menu inferior*/
+
+    /*Contenedor menu lateral-superior*/
+    div.contenedor_menu_lateral_inferior {
+        position: sticky;
+        top: 0;
+    }
+    /* estilos a ul.menu_inferior_lateral */
+    ul.menu_inferior_lateral{
+        flex-direction: column;
+        /* margin-top: 30px ; */
+    }
+    /* li.nav-item */
+    li.nav-item{
+        margin: 15px 0;
+    }
+    /* Lista de opciones configuracion */
+    /* a opciones_configuracion */
+    a.opciones_configuracion {
+        font-size: 1.2rem;
+        /* esto es similar a decir en CSS: a.opciones_configuracion SVG  */
+        & svg {
+            vertical-align: middle;
+            font-size: .9rem
+        }
+    }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    /*Menu inferior*/
+    /*Iconos de menu*/
+    img.img_icono_menu {
+        width: 1.8rem;
+    } 
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    /*Menu inferior*/
+    /*Iconos de menu*/
+    img.img_icono_menu {
+        width: 1.8rem;
+    }
+    /*Fin Menu inferior*/
+
+    /* Div publicidad/sugerencias */
+    /* Se muestra el DIV SUGERENCIAS */
+    div.sugerencias {
+        display: block;
+    }
+    /* Publicidad leyenda */
+    p.publicidad {
+        font-family: 'Open Sans', sans-serif;
+        font-size: .8rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    /* link imagen mas votadas */
+    a.link_imagen_mas_votadas {
+        text-decoration: none;
+    }
+    /* nombre de usuario imagenes mas votadas */
+    h6.titulo_card {
+        font-weight: bold;
+    }
+    /* numero de me gustas */
+    p.numero_me_gustas {
+        font-size: .8rem;
+    }
+    /* enlaces footer sugerencias */
+    a.enlaces_footer_sugerencias {
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        font-size: .8rem;
+        color: rgb(127, 127, 127, 0.4);
+        font-weight: bold; 
+        margin: 15px 0;
+    }
+    /* hover */
+    a.enlaces_footer_sugerencias:hover {
+        text-decoration: underline;
+        color: rgb(127, 127, 127, 0.6);
+    }
+    /* TLAXCALA EN IMAGENES FOOTER */
+    h6.tei_footer_sugerencias {
+        font-size: .8rem;
+        color: rgb(127, 127, 127, 0.5);
+    }
+ }
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) { 
+    /*este contenedor es igual a container-xxl de bootstrap*/
+    /*Lo cambio porque necesito que se quite el margen del container-xxl en todas las medidas antes de los 1400px*/
+    /*Ademas se puso la clase g-0 para quitar los padding a las columnas en el div del row*/
+    div.contenedor_principal {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1320px;
+    }
+ }
