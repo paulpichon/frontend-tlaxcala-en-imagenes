@@ -1,303 +1,406 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Tlaxcala En Imágenes - Mi cuenta</title>
-		<!--Bootstrap v5.3.2-->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-		<!--Estilos index.css-->
-		<link rel="stylesheet" href="css/cuenta.css">
-		<!--Google Fonts-->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
-		<!-- Iconos https://unpkg.com/feather-icons -->
-		 <!-- Analizar si debemos descargar los recurso o solo con el link esta bien https://feathericons.com/ -->
-		<script src="https://unpkg.com/feather-icons"></script>
-	</head>
-	<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tlaxcala En Imágenes - Mi cuenta</title>
+    <!--Bootstrap v5.3.2-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!--Estilos index.css-->
+    <link rel="stylesheet" href="css/cuenta.css" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Open+Sans:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Iconos https://unpkg.com/feather-icons -->
+    <!-- Analizar si debemos descargar los recurso o solo con el link esta bien https://feathericons.com/ -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!--Contenedor-->
+    <div class="contenedor_principal">
+      <!--Row-->
+      <div class="row g-0">
+        <!--Contenedor menu-->
+        <div class="col-md-2 col-lg-2 col-xl-2">
+          <div class="contenedor_menu_lateral_inferior fixed-bottom">
+            <ul class="nav justify-content-center menu_inferior_lateral">
+              <li class="nav-item">
+                <a
+                  class="nav-link opciones_menu active"
+                  aria-current="page"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Inicio"
+                  href="#"
+                >
+                  <!--https://feathericons.com/-->
+                  <i data-feather="home"></i>
+                  <span class="nombre_opciones_menu">Home</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link opciones_menu"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  title="Notificaciones"
+                  href="#"
+                >
+                  <!--https://feathericons.com/-->
+                  <i data-feather="bell"></i>
+                  <span class="nombre_opciones_menu">Notificaciones</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link opciones_menu postear"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  title="Postear una imágen"
+                  href="#"
+                >
+                  <!--https://feathericons.com/-->
+                  <i data-feather="plus-circle"></i>
+                  <span class="nombre_opciones_menu">Postear</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link opciones_menu"
+                  alt="Icono configuraciones"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  title="Configuraciones"
+                  href="#"
+                >
+                  <!--https://feathericons.com/-->
+                  <i data-feather="sliders"></i>
+                  <span class="nombre_opciones_menu">Configuración</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link opciones_menu"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  title="Perfil de usuario"
+                  href="#"
+                >
+                  <!--https://feathericons.com/-->
+                  <i data-feather="user"></i>
+                  <span class="nombre_opciones_menu">Magaly Jimenez</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--Fin Contenedor menu-->
 
-		<!--Contenedor-->
-		<div class="contenedor_principal">
-			<!--Row-->
-			<div class="row g-0">
-				<!--Contenedor menu-->
-				<div class="col-md-2 col-lg-2 col-xl-2">
-					<div class="contenedor_menu_lateral_inferior fixed-bottom">
-						<ul class="nav justify-content-center menu_inferior_lateral">
-							<li class="nav-item">
-								<a class="nav-link opciones_menu active" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="top" title="Inicio" href="#">
-									<!--https://feathericons.com/-->
-									<i  data-feather="home"></i>
-									<span class="nombre_opciones_menu">Home</span>
-								</a>
-							</li>
-							<li class="nav-item">
-							  	<a class="nav-link opciones_menu" data-bs-toggle="tooltip" data-bs-placement="right" title="Notificaciones" href="#">
-									<!--https://feathericons.com/-->
-									<i  data-feather="bell"></i>
-									<span class="nombre_opciones_menu">Notificaciones</span>
-								</a>
-							</li>
-							<li class="nav-item">
-							  	<a class="nav-link opciones_menu postear" data-bs-toggle="tooltip" data-bs-placement="right" title="Postear una imágen" href="#">
-									<!--https://feathericons.com/-->
-									<i  data-feather="plus-circle"></i>
-									<span class="nombre_opciones_menu">Postear</span>
-								</a>
-							</li>
-							<li class="nav-item">
-							  	<a class="nav-link opciones_menu" alt="Icono configuraciones" data-bs-toggle="tooltip" data-bs-placement="right" title="Configuraciones" href="#">
-									<!--https://feathericons.com/-->
-									<i  data-feather="sliders"></i>
-									<span class="nombre_opciones_menu">Configuración</span>
-								</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link opciones_menu" data-bs-toggle="tooltip" data-bs-placement="right" title="Perfil de usuario" href="#">
-									<!--https://feathericons.com/-->
-									<i  data-feather="user"></i>
-									<span class="nombre_opciones_menu">Magaly Jimenez</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<!--Fin Contenedor menu-->
+        <!--Contenedor Contenido Principal-->
+        <div class="col-md-10 col-lg-10 col-xl-6 contenedor_central_contenido">
+          <!--Contenedor menu prinicpal-->
+          <div class="contenedor_menu_superior sticky-top">
+            <!--Menu superior-->
+            <nav class="navbar-expand-lg menu_superior_central">
+              <h1 class="titulo_principal_h1">
+                TLAXCALA EN <span class="display_inline_titulo">IMÁGENES</span>
+              </h1>
+              <h6 class="subtitulo_h6 por_tad">
+                por
+                <span
+                  class="span_tad d-block"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  title="Tlaxcala Al Descubierto"
+                  >T A D</span
+                >
+              </h6>
+            </nav>
+            <!--Fin Menu superior-->
+          </div>
+          <!--Fin Contenedor menu prinicpal-->
 
+          <!-- Contenedor del contenido principal perfil de usuario -->
+          <div class="contenedor_contenido_principal">
+            <!-- contenedor configuracion y nombre de usuario -->
+            <div class="contenedor_configuracion_titulo">
+              <!-- container -->
+              <div class="container-fluid">
+                <!-- contenedor informacion perfil usuario -->
+                <div class="contenedor_info_usuario text-center">
+                  <h1 class="titulo_configuracion">Tu cuenta</h1>
+                  <p class="nombre_usuario">@magalyjimenez</p>
+                </div>
+              </div>
+              <!-- fin container -->
+            </div>
+            <!-- contenedor configuracion y nombre de usuario -->
 
-				<!--Contenedor Contenido Principal-->
-				<div class="col-md-10 col-lg-10  col-xl-6 contenedor_central_contenido">
-					<!--Contenedor menu prinicpal-->
-					<div class="contenedor_menu_superior sticky-top">
-						<!--Menu superior-->
-						<nav class="navbar-expand-lg menu_superior_central">
-							<h1 class="titulo_principal_h1">TLAXCALA EN <span class="display_inline_titulo">IMÁGENES</span></h1>
-							<h6 class="subtitulo_h6 por_tad">por <span class="span_tad d-block" data-bs-toggle="tooltip" data-bs-placement="right" title="Tlaxcala Al Descubierto">T A D</span></h6>
-						</nav>
-						<!--Fin Menu superior-->
-					</div>
-					<!--Fin Contenedor menu prinicpal-->
-					
-					<!-- Contenedor del contenido principal perfil de usuario -->
-					<div class="contenedor_contenido_principal">
-                        <!-- contenedor configuracion y nombre de usuario -->
-						<div class="contenedor_configuracion_titulo">
-							<!-- container -->
-							<div class="container-fluid">
-								<!-- contenedor informacion perfil usuario -->
-								<div class="contenedor_info_usuario text-center">
-									<h1 class="titulo_configuracion">Tu cuenta</h1>
-									<p class="nombre_usuario">@magalyjimenez</p>
+            <!-- Formulario para cambiar informacion del usuario -->
+            <div class="container-fluid">
+              <div
+                class="contenedor_formulario_editar_informacion_usuario mt-5 mb-5"
+              >
+                <form class="needs-validation" novalidate>
+					<div class="form-row">
+						<!-- row -->
+						<div class="row">
+							<!-- Imagen de perfil -->
+							<div class="col-12 col-md-6 mb-3">
+								<label for="validationCustom01">Nombre</label>
+								<input
+								type="text"
+								class="form-control"
+								id="validationCustom01"
+								placeholder="Nombre"
+								required
+								/>
+								<div class="invalid-feedback">
+									Este campo es obligatorio
 								</div>
 							</div>
-							<!-- fin container -->
-						</div>
-                        <!-- contenedor configuracion y nombre de usuario -->
-
-						<!-- Formulario para cambiar informacion del usuario -->
-						<div class="container-fluid">
-							<div class="contenedor_formulario_editar_informacion_usuario mt-5 mb-5">
-								<form class="needs-validation" novalidate>
-									<div class="form-row">
-									  <div class="col-md-4 mb-3">
-										<label for="validationCustom01">First name</label>
-										<input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
-										<div class="valid-feedback">
-										  Looks good!
-										</div>
-									  </div>
-									  <div class="col-md-4 mb-3">
-										<label for="validationCustom02">Last name</label>
-										<input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
-										<div class="valid-feedback">
-										  Looks good!
-										</div>
-									  </div>
-									  <div class="col-md-4 mb-3">
-										<label for="validationCustomUsername">Username</label>
-										<div class="input-group">
-										  <div class="input-group-prepend">
-											<span class="input-group-text" id="inputGroupPrepend">@</span>
-										  </div>
-										  <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
-										  <div class="invalid-feedback">
-											Please choose a username.
-										  </div>
-										</div>
-									  </div>
-									</div>
-									<div class="form-row">
-									  <div class="col-md-6 mb-3">
-										<label for="validationCustom03">City</label>
-										<input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-										<div class="invalid-feedback">
-										  Please provide a valid city.
-										</div>
-									  </div>
-									  <div class="col-md-3 mb-3">
-										<label for="validationCustom04">State</label>
-										<input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
-										<div class="invalid-feedback">
-										  Please provide a valid state.
-										</div>
-									  </div>
-									  <div class="col-md-3 mb-3">
-										<label for="validationCustom05">Zip</label>
-										<input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
-										<div class="invalid-feedback">
-										  Please provide a valid zip.
-										</div>
-									  </div>
-									</div>
-									<div class="form-group">
-									  <div class="form-check">
-										<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-										<label class="form-check-label" for="invalidCheck">
-										  Agree to terms and conditions
-										</label>
-										<div class="invalid-feedback">
-										  You must agree before submitting.
-										</div>
-									  </div>
-									</div>
-									<button class="btn btn-primary" type="submit">Submit form</button>
-								  </form>								  
+							<!-- Nombre de usuario -->
+							<div class="col-12 col-md-6 mb-3">
+								<label for="validationCustom01">Nombre</label>
+								<input
+								type="text"
+								class="form-control"
+								id="validationCustom01"
+								placeholder="Nombre"
+								required
+								/>
+								<div class="invalid-feedback">
+									Este campo es obligatorio
+								</div>
 							</div>
-						</div>
-						<!-- Fin Formulario para cambiar informacion del usuario -->
-						
-
-					</div>
-					<!-- Contenedor del contenido principal perfil de usuario -->
-				</div>
-				<!--Fin Contenedor Contenido Principal-->
-
-				<!--Contenedor publicidad/sugerencias-->
-				<div class="col-xl-4 sugerencias">
-					<!-- Contenedor de contenido -->
-					<div class="contenedor_sugerencias sticky-top p-3">
-						<!-- contenedor titulo -->
-						<div class="contenedor_titulo_h5">
-							<!-- titulo principal de sugerencias -->
-							<h5 class="text-center">Imagénes más votadas</h5>
-						</div>	
-						<!--fin contenedor titulo -->					
-						<!-- contenedor_sugerencias_seguir -->
-						<div class="contenedor_sugerencias_seguir mt-4">
-							<div class="row d-flex justify-content-center">
-								<!-- imagenes mas votadas -->
-								<div class="col-4">
-									<div class="sugerencias_para_seguir">
-										<a class="link_imagen_mas_votadas" href="">
-											<div class="card text-center">
-												<img class="card-img-top" src="img/imagenes_relleno/449863788_1528025958095735_4720702507067987786_n.jpg" alt="Card image cap">
-												<div class="p-1">
-												  <h6 class="titulo_card">Samantha Flowers</h6>
-												  <p class="numero_me_gustas">1872 Me gusta</p>
-												</div>
-											</div>
-										</a>
-									</div>
+							<!-- Apellidos de usuario -->
+							<div class="col-12 col-md-6 mb-3">
+								<label for="validationCustom02">Apellidos</label>
+								<input
+								type="text"
+								class="form-control"
+								id="validationCustom02"
+								placeholder="Apellidos"
+								required
+								/>
+								<div class="invalid-feedback">
+									Este campo es obligatorio
 								</div>
-								<!-- fin imagenes mas votadas -->
-								 <!-- imagenes mas votadas -->
-								<div class="col-4">
-									<div class="sugerencias_para_seguir">
-										<a class="link_imagen_mas_votadas" href="">
-											<div class="card text-center">
-												<img class="card-img-top" src="img/imagenes_relleno/449863788_1528025958095735_4720702507067987786_n.jpg" alt="Card image cap">
-												<div class="p-1">
-												  <h6 class="titulo_card">Samantha Flowers</h6>
-												  <p class="numero_me_gustas">1872 Me gusta</p>
-												</div>
-											</div>
-										</a>
-									</div>
-								</div>
-								<!-- fin imagenes mas votadas -->
-								 <!-- imagenes mas votadas -->
-								<div class="col-4">
-									<div class="sugerencias_para_seguir">
-										<a class="link_imagen_mas_votadas" href="">
-											<div class="card text-center">
-												<img class="card-img-top" src="img/imagenes_relleno/449863788_1528025958095735_4720702507067987786_n.jpg" alt="Card image cap">
-												<div class="p-1">
-												  <h6 class="titulo_card">Samantha Flowers</h6>
-												  <p class="numero_me_gustas">1872 Me gusta</p>
-												</div>
-											</div>
-										</a>
-									</div>
-								</div>
-								<!-- fin imagenes mas votadas -->
 							</div>
-							<!-- row publicidad -->
-							<div class="row d-flex justify-content-center">
-								<!-- Publicidad -->
-								<div class="col-8 mt-4">
-									<!-- sugerencias_para_seguir -->
-									<div class="sugerencias_para_seguir">
-										<!-- leyenda publicidad -->
-											<p class="m-0 publicidad">Publicidad...</p>
-										<!-- fin leyenda publicidad -->
-										<a href="http://">
-											<div class="card">
-												<img class="card-img-top" src="img/imagenes_relleno/275700409_335093695238277_3060717699969997284_n.jpg" alt="Card image cap">
-											</div>
-										</a>
-									</div>
-									<!-- fin sugerencias_para_seguir -->
+							<!-- Correo de usuario -->
+							<div class="col-12 mb-3">
+								<label for="validationCustom02">Correo electronico</label>
+								<input
+								type="email"
+								class="form-control"
+								id="validationCustom02"
+								placeholder="Correo electronico"
+								required
+								/>
+								<div class="invalid-feedback">
+									Este campo es obligatorio
 								</div>
-								<!-- Publicidad -->
 							</div>
-							<!-- Fin row publicidad -->
-
-							<div class="row d-flex justify-content-center mt-4">
-								<!-- Publicidad -->
-								<div class="col-12">
-									<div class="text-center mt-3">
-										<div class="enlaces_informacion_general">
-											<a class="enlaces_footer_sugerencias" href="">Condiciones de servicio</a>
-											<br>
-											<a class="enlaces_footer_sugerencias" href="">Política de Privacidad</a>
-											<br >
-											<a class="enlaces_footer_sugerencias" href="">Información sobre Tlaxcala en Imagénes</a>
-											<br>
-											<h6 class="tei_footer_sugerencias mt-5">© 2024 Tlaxcala En Imágenes</h6>
-										</div>
-									</div>
+							<!-- Contraseña de usuario -->
+							<div class="col-12 col-md-6 mb-3">
+								<label for="validationCustom02">Contraseña</label>
+								<input
+								type="password"
+								class="form-control"
+								id="validationCustom02"
+								placeholder="Contraseña"
+								required
+								/>
+								<div class="invalid-feedback">
+									Este campo es obligatorio
 								</div>
-								<!-- Publicidad -->
+							</div>
+							<!-- Lugar de residencia -->
+							<div class="col-12 col-md-6 mb-3">
+								<label for="validationCustom02">Estado</label>
+								<select class="form-control" required disabled>
+									<option value="Tlaxcala">Tlaxcala</option>
+								</select>
+								<div class="invalid-feedback">Este campo es obligatorio</div>
 							</div>
 						</div>
-						<!--fin contenedor_sugerencias_seguir -->
+						<!-- fin row -->
 					</div>
-				</div>
-				<!--Fin Contenedor publicidad/sugerencias-->
-			</div>
-			<!--Fin Row-->
-		</div>
-		<!--Fin Contenedor-->
+					<button class="btn" type="submit">
+						Submit form
+					</button>
+                </form>
+              </div>
+            </div>
+            <!-- Fin Formulario para cambiar informacion del usuario -->
+          </div>
+          <!-- Contenedor del contenido principal perfil de usuario -->
+        </div>
+        <!--Fin Contenedor Contenido Principal-->
 
-		<!--Bootstrap v5.3.2-->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-		<!-- funcionamiento del boton like -->
-		<script src="js/validar-formulario.js"></script>
+        <!--Contenedor publicidad/sugerencias-->
+        <div class="col-xl-4 sugerencias">
+          <!-- Contenedor de contenido -->
+          <div class="contenedor_sugerencias sticky-top p-3">
+            <!-- contenedor titulo -->
+            <div class="contenedor_titulo_h5">
+              <!-- titulo principal de sugerencias -->
+              <h5 class="text-center">Imagénes más votadas</h5>
+            </div>
+            <!--fin contenedor titulo -->
+            <!-- contenedor_sugerencias_seguir -->
+            <div class="contenedor_sugerencias_seguir mt-4">
+              <div class="row d-flex justify-content-center">
+                <!-- imagenes mas votadas -->
+                <div class="col-4">
+                  <div class="sugerencias_para_seguir">
+                    <a class="link_imagen_mas_votadas" href="">
+                      <div class="card text-center">
+                        <img
+                          class="card-img-top"
+                          src="img/imagenes_relleno/449863788_1528025958095735_4720702507067987786_n.jpg"
+                          alt="Card image cap"
+                        />
+                        <div class="p-1">
+                          <h6 class="titulo_card">Samantha Flowers</h6>
+                          <p class="numero_me_gustas">1872 Me gusta</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- fin imagenes mas votadas -->
+                <!-- imagenes mas votadas -->
+                <div class="col-4">
+                  <div class="sugerencias_para_seguir">
+                    <a class="link_imagen_mas_votadas" href="">
+                      <div class="card text-center">
+                        <img
+                          class="card-img-top"
+                          src="img/imagenes_relleno/449863788_1528025958095735_4720702507067987786_n.jpg"
+                          alt="Card image cap"
+                        />
+                        <div class="p-1">
+                          <h6 class="titulo_card">Samantha Flowers</h6>
+                          <p class="numero_me_gustas">1872 Me gusta</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- fin imagenes mas votadas -->
+                <!-- imagenes mas votadas -->
+                <div class="col-4">
+                  <div class="sugerencias_para_seguir">
+                    <a class="link_imagen_mas_votadas" href="">
+                      <div class="card text-center">
+                        <img
+                          class="card-img-top"
+                          src="img/imagenes_relleno/449863788_1528025958095735_4720702507067987786_n.jpg"
+                          alt="Card image cap"
+                        />
+                        <div class="p-1">
+                          <h6 class="titulo_card">Samantha Flowers</h6>
+                          <p class="numero_me_gustas">1872 Me gusta</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- fin imagenes mas votadas -->
+              </div>
+              <!-- row publicidad -->
+              <div class="row d-flex justify-content-center">
+                <!-- Publicidad -->
+                <div class="col-8 mt-4">
+                  <!-- sugerencias_para_seguir -->
+                  <div class="sugerencias_para_seguir">
+                    <!-- leyenda publicidad -->
+                    <p class="m-0 publicidad">Publicidad...</p>
+                    <!-- fin leyenda publicidad -->
+                    <a href="http://">
+                      <div class="card">
+                        <img
+                          class="card-img-top"
+                          src="img/imagenes_relleno/275700409_335093695238277_3060717699969997284_n.jpg"
+                          alt="Card image cap"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <!-- fin sugerencias_para_seguir -->
+                </div>
+                <!-- Publicidad -->
+              </div>
+              <!-- Fin row publicidad -->
 
-		<script>
-			// Renderiza todos los íconos de Feather al cargar la página.
-			document.addEventListener('DOMContentLoaded', function() {
-				feather.replace(); // Renderiza los íconos de Feather al cargar la página.
+              <div class="row d-flex justify-content-center mt-4">
+                <!-- Publicidad -->
+                <div class="col-12">
+                  <div class="text-center mt-3">
+                    <div class="enlaces_informacion_general">
+                      <a class="enlaces_footer_sugerencias" href=""
+                        >Condiciones de servicio</a
+                      >
+                      <br />
+                      <a class="enlaces_footer_sugerencias" href=""
+                        >Política de Privacidad</a
+                      >
+                      <br />
+                      <a class="enlaces_footer_sugerencias" href=""
+                        >Información sobre Tlaxcala en Imagénes</a
+                      >
+                      <br />
+                      <h6 class="tei_footer_sugerencias mt-5">
+                        © 2024 Tlaxcala En Imágenes
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+                <!-- Publicidad -->
+              </div>
+            </div>
+            <!--fin contenedor_sugerencias_seguir -->
+          </div>
+        </div>
+        <!--Fin Contenedor publicidad/sugerencias-->
+      </div>
+      <!--Fin Row-->
+    </div>
+    <!--Fin Contenedor-->
 
-				//Tooltip bootstrap
-				const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-				
-				const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-					return new bootstrap.Tooltip(tooltipTriggerEl)
-				});
-			});
-		</script>
-	</body>
+    <!--Bootstrap v5.3.2-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- funcionamiento del boton like -->
+    <script src="js/validar-formulario.js"></script>
+
+    <script>
+      // Renderiza todos los íconos de Feather al cargar la página.
+      document.addEventListener("DOMContentLoaded", function () {
+        feather.replace(); // Renderiza los íconos de Feather al cargar la página.
+
+        //Tooltip bootstrap
+        const tooltipTriggerList = [].slice.call(
+          document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        );
+
+        const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+      });
+    </script>
+  </body>
 </html>
