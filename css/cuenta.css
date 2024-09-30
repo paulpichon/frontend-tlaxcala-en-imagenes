@@ -59,54 +59,18 @@ a.postear {
 /*
 *
 * 
-    Opciones de configuracion 
+    Formulario 
 *
 *
 */
-
-/* configuracion y nombre de usuario */
-/* estilos */
-div.contenedor_configuracion_titulo {
-    border-bottom: 1px solid #EBCA9A;
-    padding: 20px 0;
+/* boton para guardar cambios */
+button.btn_enviar_formulario {
+    background-color: #EBCA9A;
+    color: white;
 }
-/* titulo configuracion */
-h1.titulo_configuracion {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 1.3rem;
-}
-/* nombre usuario */
-p.nombre_usuario {
-    font-family: 'Open Sans', sans-serif;
-    margin-bottom: 0;
-    font-size: 0.8rem;
-}
-
-/* Lista de opciones */
-ul.lista_opciones_configuracion {
-    padding: 10px;
-}
-/* li opciones */
-li.li_opciones_configuraciones {
-    margin: 15px 0;
-    list-style: none;
-}
-/* a opciones_configuracion */
-a.opciones_configuracion {
-    color: #000000;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
-    padding-left: 10px;
-
-    /* esto es similar a decir en CSS: a.opciones_configuracion SVG  */
-    & svg {
-        color: #EBCA9A;
-        margin-right: 7px;
-        vertical-align: top;
-        font-size: 0.7rem
-    }
+button.btn_enviar_formulario:hover {
+    border: solid 1px #EBCA9A;
+    color: #EBCA9A;
 }
 
 /* Publicaciones GRID */
