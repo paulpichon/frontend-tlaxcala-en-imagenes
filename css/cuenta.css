@@ -63,6 +63,21 @@ a.postear {
 *
 *
 */
+/* Boton subir imagenes */
+/* Ocultar el input file */
+input[type="file"] {
+    display: none;
+}
+
+/* Estilos para la imagen que funcionará como botón */
+.upload-btn {
+    width: auto;
+    height: 300px;
+    object-fit: contain; /* Mantiene la proporción y ajusta dentro del contenedor */
+    max-width: 100%;
+    cursor: pointer;
+}
+
 /* boton para guardar cambios */
 button.btn_enviar_formulario {
     background-color: #EBCA9A;

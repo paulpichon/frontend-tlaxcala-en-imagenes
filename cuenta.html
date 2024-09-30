@@ -151,93 +151,90 @@
                 class="contenedor_formulario_editar_informacion_usuario mt-5 mb-5"
               >
                 <form class="needs-validation" novalidate>
-					<div class="form-row">
-						<!-- row -->
-						<div class="row">
-							<!-- Imagen de perfil -->
-							<div class="col-12 col-md-6 mb-3">
-								<label for="validationCustom01">Nombre</label>
-								<input
-								type="text"
-								class="form-control"
-								id="validationCustom01"
-								placeholder="Nombre"
-								required
-								/>
-								<div class="invalid-feedback">
-									Este campo es obligatorio
-								</div>
-							</div>
-							<!-- Nombre de usuario -->
-							<div class="col-12 col-md-6 mb-3">
-								<label for="validationCustom01">Nombre</label>
-								<input
-								type="text"
-								class="form-control"
-								id="validationCustom01"
-								placeholder="Nombre"
-								required
-								/>
-								<div class="invalid-feedback">
-									Este campo es obligatorio
-								</div>
-							</div>
-							<!-- Apellidos de usuario -->
-							<div class="col-12 col-md-6 mb-3">
-								<label for="validationCustom02">Apellidos</label>
-								<input
-								type="text"
-								class="form-control"
-								id="validationCustom02"
-								placeholder="Apellidos"
-								required
-								/>
-								<div class="invalid-feedback">
-									Este campo es obligatorio
-								</div>
-							</div>
-							<!-- Correo de usuario -->
-							<div class="col-12 mb-3">
-								<label for="validationCustom02">Correo electronico</label>
-								<input
-								type="email"
-								class="form-control"
-								id="validationCustom02"
-								placeholder="Correo electronico"
-								required
-								/>
-								<div class="invalid-feedback">
-									Este campo es obligatorio
-								</div>
-							</div>
-							<!-- Contraseña de usuario -->
-							<div class="col-12 col-md-6 mb-3">
-								<label for="validationCustom02">Contraseña</label>
-								<input
-								type="password"
-								class="form-control"
-								id="validationCustom02"
-								placeholder="Contraseña"
-								required
-								/>
-								<div class="invalid-feedback">
-									Este campo es obligatorio
-								</div>
-							</div>
-							<!-- Lugar de residencia -->
-							<div class="col-12 col-md-6 mb-3">
-								<label for="validationCustom02">Estado</label>
-								<select class="form-control" required disabled>
-									<option value="Tlaxcala">Tlaxcala</option>
-								</select>
-								<div class="invalid-feedback">Este campo es obligatorio</div>
-							</div>
-						</div>
-						<!-- fin row -->
-					</div>
-					<button class="btn btn_enviar_formulario" type="submit">
-            Guardar cambios
-					</button>
+                  <div class="form-row">
+                    <!-- row -->
+                    <div class="row">
+                      <div class="col-12 mb-3 text-center">
+                        <!-- Imagen de perfil -->
+                        <!-- Imagen que funcionará como botón -->
+                        <img src="img\usuarios\375868544_6529202730509112_8617095531114370924_n.jpg" alt="Subir Imagen" class="upload-btn" id="uploadImage">
+                        <!-- Input file oculto -->
+                        <input type="file" id="fileInput" accept="image/*">
+
+                        <div class="invalid-feedback">
+                          Este campo es obligatorio
+                        </div>
+                      </div>
+                      <!-- Nombre de usuario -->
+                      <div class="col-12 col-md-6 mb-3">
+                        <label for="validationCustom01">Nombre</label>
+                        <input
+                        type="text"
+                        class="form-control"
+                        id="validationCustom01"
+                        placeholder="Nombre"
+                        required
+                        />
+                        <div class="invalid-feedback">
+                          Este campo es obligatorio
+                        </div>
+                      </div>
+                      <!-- Apellidos de usuario -->
+                      <div class="col-12 col-md-6 mb-3">
+                        <label for="validationCustom02">Apellidos</label>
+                        <input
+                        type="text"
+                        class="form-control"
+                        id="validationCustom02"
+                        placeholder="Apellidos"
+                        required
+                        />
+                        <div class="invalid-feedback">
+                          Este campo es obligatorio
+                        </div>
+                      </div>
+                      <!-- Correo de usuario -->
+                      <div class="col-12 mb-3">
+                        <label for="validationCustom02">Correo electronico</label>
+                        <input
+                        type="email"
+                        class="form-control"
+                        id="validationCustom02"
+                        placeholder="Correo electronico"
+                        required
+                        />
+                        <div class="invalid-feedback">
+                          Este campo es obligatorio
+                        </div>
+                      </div>
+                      <!-- Contraseña de usuario -->
+                      <div class="col-12 col-md-6 mb-3">
+                        <label for="validationCustom02">Contraseña</label>
+                        <input
+                        type="password"
+                        class="form-control"
+                        id="validationCustom02"
+                        placeholder="Contraseña"
+                        required
+                        />
+                        <div class="invalid-feedback">
+                          Este campo es obligatorio
+                        </div>
+                      </div>
+                      <!-- Lugar de residencia -->
+                      <div class="col-12 col-md-6 mb-3">
+                        <label for="validationCustom02">Estado</label>
+                        <select class="form-control" required disabled>
+                          <option value="Tlaxcala">Tlaxcala</option>
+                        </select>
+                        <div class="invalid-feedback">Este campo es obligatorio</div>
+                      </div>
+                    </div>
+                    <!-- fin row -->
+                  </div>
+                  <button class="btn btn_enviar_formulario" type="submit">
+                    Guardar cambios
+                  </button>
                 </form>
               </div>
             </div>
@@ -386,6 +383,8 @@
     ></script>
     <!-- funcionamiento del boton like -->
     <script src="js/validar-formulario.js"></script>
+    <!-- funcionamiento del boton para subir una imagen -->
+    <script src="js/interaccion-boton-subir-imagen.js"></script>
 
     <script>
       // Renderiza todos los íconos de Feather al cargar la página.
