@@ -157,12 +157,11 @@
                       <div class="col-12 mb-3 text-center">
                         <!-- Imagen de perfil -->
                         <!-- Imagen que funcionará como botón -->
-                        <img src="img\usuarios\375868544_6529202730509112_8617095531114370924_n.jpg" alt="Subir Imagen" class="upload-btn" id="uploadImage">
+                        <img class="icambiar_imagen_perfil" id="uploadImage" src="img\usuarios\375868544_6529202730509112_8617095531114370924_n.jpg" alt="Subir Imagen" >
                         <!-- Input file oculto -->
-                        <input type="file" id="fileInput" accept="image/*">
-
+                        <input class="form-control" type="file" id="fileInput" accept="image/*" required>
                         <div class="invalid-feedback">
-                          Este campo es obligatorio
+                          La imagen de perfil es obligatoria
                         </div>
                       </div>
                       <!-- Nombre de usuario -->
@@ -202,6 +201,8 @@
                         id="validationCustom02"
                         placeholder="Correo electronico"
                         required
+                        disabled
+                        value="paul@aquiestoy.mx"
                         />
                         <div class="invalid-feedback">
                           Este campo es obligatorio

@@ -68,14 +68,14 @@ a.postear {
 input[type="file"] {
     display: none;
 }
-
 /* Estilos para la imagen que funcionará como botón */
-.upload-btn {
+img.icambiar_imagen_perfil {
     width: auto;
     height: 300px;
     object-fit: contain; /* Mantiene la proporción y ajusta dentro del contenedor */
     max-width: 100%;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 /* boton para guardar cambios */
