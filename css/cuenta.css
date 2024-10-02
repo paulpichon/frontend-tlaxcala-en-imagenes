@@ -87,21 +87,6 @@ button.btn_enviar_formulario:hover {
     border: solid 1px #EBCA9A;
     color: #EBCA9A;
 }
-
-/* Publicaciones GRID */
-/* titulo publicaciones */
-h6.titulo_publicaciones {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.9rem;
-}
-/* imagen grid */
-img.imagen_grid_perfil_usuario {
-    width: 100%;
-    max-height: 100%;
-    image-rendering: pixelated;
-    cursor: pointer;
-}
-
 /*
 *
 *   Div publicidad/sugerencias
@@ -149,7 +134,7 @@ No media query for `xs` since this is the default in Bootstrap*/
     
     /* CONFIGURACION */
 
-    /* titulo configuracion */
+    /* titulo tu cuenta */
     h1.titulo_configuracion {
         font-size: 1.7rem;
     }
@@ -218,16 +203,6 @@ No media query for `xs` since this is the default in Bootstrap*/
     /* li.nav-item */
     li.nav-item{
         margin: 15px 0;
-    }
-    /* Lista de opciones configuracion */
-    /* a opciones_configuracion */
-    a.opciones_configuracion {
-        font-size: 1.2rem;
-        /* esto es similar a decir en CSS: a.opciones_configuracion SVG  */
-        & svg {
-            vertical-align: middle;
-            font-size: .9rem
-        }
     }
  }
 
